@@ -2,33 +2,40 @@
     --primary: #1e90ff;
     --dark: #ffffff;
     --fontFamily: #ffffff;
+    --fontColor: #000;
 }
 
 .nav-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     height: 10%;
+    flex-wrap: wrap;
 }
 
 .nav-header>div {
-    padding: 0 30px;
+    min-width: 100px;
+    color: var(--fontColor);
     padding-bottom: 30px;
-    color: black;
+    flex-shrink: 1;
 }
 
 .nav-header>div>a {
     text-decoration: none;
-    color: white;
+    color: var(--fontColor);
     font-family: var(--fontFamily);
     font-size: 22px;
     font-weight: bold;
 }
 
+.nav-header>div>a:hover {
+    color: #c93d48;
+}
+
 .portfolio-owner {
     width: 100%;
-    color: cornsilk;
+    /* color: var(--fontColor); */
+    color: #c93d48;
     text-align: center;
     font-size: 60px;
     font-family: serif;

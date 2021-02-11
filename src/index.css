@@ -4,10 +4,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 99vh;
-    background-color: #3f0d12;
-    background-image: linear-gradient(315deg, #3F0D13 0%, #a71d31 74%);
+    background-color: 'white';
+    /* background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3F0D13 0%, #a71d31 74%); */
     height: 100%;
     min-height: 99vh;
+    cursor: url('../src/amaranth-cursor.ico'), default !important;
 }
 
 code {

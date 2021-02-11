@@ -4,7 +4,7 @@ export const FlexContainer = styled.div`
     display:flex;
     flex-direction:row;
     justify-content: space-around;
-    padding:40px 250px;
+    padding:40px 10%;
 `;
 
 export const FlexPicsColumn = styled.div`
@@ -21,9 +21,9 @@ export const FlexOptions = styled.div`
     border-radius: 12px;
     margin: 0px 36%;
     height: 30px;
-    padding: 12px;
+    padding: 12px 0;
     font-size: 19px;
-    color: white;
-    justify-content: space-around;
+    color: black;
+    justify-content: space-between;
     font-family: sans-serif;
 `;
