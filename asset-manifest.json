@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f6b0851.chunk.css",
-    "main.js": "/static/js/main.cfcb51d3.chunk.js",
-    "main.js.map": "/static/js/main.cfcb51d3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.412a87ad.js",
-    "runtime-main.js.map": "/static/js/runtime-main.412a87ad.js.map",
-    "static/js/2.9bcf3caa.chunk.js": "/static/js/2.9bcf3caa.chunk.js",
-    "static/js/2.9bcf3caa.chunk.js.map": "/static/js/2.9bcf3caa.chunk.js.map",
-    "static/js/3.8265ebff.chunk.js": "/static/js/3.8265ebff.chunk.js",
-    "static/js/3.8265ebff.chunk.js.map": "/static/js/3.8265ebff.chunk.js.map",
+    "main.css": "/static/css/main.e0c0e64d.chunk.css",
+    "main.js": "/static/js/main.0ed24e6e.chunk.js",
+    "main.js.map": "/static/js/main.0ed24e6e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.37eb1dd2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.37eb1dd2.js.map",
+    "static/js/2.65e0119b.chunk.js": "/static/js/2.65e0119b.chunk.js",
+    "static/js/2.65e0119b.chunk.js.map": "/static/js/2.65e0119b.chunk.js.map",
+    "static/js/3.08b12fc4.chunk.js": "/static/js/3.08b12fc4.chunk.js",
+    "static/js/3.08b12fc4.chunk.js.map": "/static/js/3.08b12fc4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5f6b0851.chunk.css.map": "/static/css/main.5f6b0851.chunk.css.map",
-    "static/js/2.9bcf3caa.chunk.js.LICENSE.txt": "/static/js/2.9bcf3caa.chunk.js.LICENSE.txt",
+    "static/css/main.e0c0e64d.chunk.css.map": "/static/css/main.e0c0e64d.chunk.css.map",
+    "static/js/2.65e0119b.chunk.js.LICENSE.txt": "/static/js/2.65e0119b.chunk.js.LICENSE.txt",
     "static/media/1Drink.png": "/static/media/1Drink.f5eaae90.png",
     "static/media/1PunkyPork.png": "/static/media/1PunkyPork.04f3e0ba.png",
     "static/media/2Boxy.png": "/static/media/2Boxy.b98ec3b8.png",
@@ -33,12 +33,13 @@
     "static/media/Monkey-Boxer2.png": "/static/media/Monkey-Boxer2.c39f8fa4.png",
     "static/media/Monster2.png": "/static/media/Monster2.7a2523f1.png",
     "static/media/Relic.png": "/static/media/Relic.25e034bd.png",
-    "static/media/Wise-brains.png": "/static/media/Wise-brains.10908a7f.png"
+    "static/media/Wise-brains.png": "/static/media/Wise-brains.10908a7f.png",
+    "static/media/index.css": "/static/media/amaranth-cursor.404fe1d6.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.412a87ad.js",
-    "static/js/2.9bcf3caa.chunk.js",
-    "static/css/main.5f6b0851.chunk.css",
-    "static/js/main.cfcb51d3.chunk.js"
+    "static/js/runtime-main.37eb1dd2.js",
+    "static/js/2.65e0119b.chunk.js",
+    "static/css/main.e0c0e64d.chunk.css",
+    "static/js/main.0ed24e6e.chunk.js"
   ]
 }
