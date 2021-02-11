@@ -1,0 +1,36 @@
+:root {
+    --primary: #1e90ff;
+    --dark: #ffffff;
+    --fontFamily: #ffffff;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.nav-header>div {
+    padding: 0 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+.nav-header>div>a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontFamily);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.portfolio-owner {
+    width: 100%;
+    color: cornsilk;
+    text-align: center;
+    font-size: 60px;
+    font-family: serif;
+    padding-top: 28px;
+}
