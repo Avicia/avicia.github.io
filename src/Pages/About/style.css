@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex_col {
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    width: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-SS {
+    font-family: sans-serif;
+}

@@ -4,8 +4,24 @@ export const FlexContainer = styled.div`
     display:flex;
     flex-direction:row;
     justify-content: space-around;
-    padding:40px 10%;
+    padding:2vh 0;
 `;
+
+export const MainContainer = styled.div`
+    margin: 0 25vh;
+`;
+export const FlexRow = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`;
+export const FlexCol = styled.div`
+    flex: 1;
+    flex-direction: column;
+`;
+
 
 export const FlexPicsColumn = styled.div`
     display:flex;

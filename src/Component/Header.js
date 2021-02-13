@@ -9,23 +9,23 @@ class Header extends Component {
     }
     render() {
         return (
-            <React.Fragment>
-                <div className="portfolio-owner">Avicia Fernandes</div>
-                <nav className="nav-header">
-                    <div>
-                        <Link to="/">Home</Link>
-                    </div>
-                    <div>
-                        <Link to="/about">About</Link>
-                    </div>
-                    <div>
-                        <Link to="/social">Social</Link>
-                    </div>
-                    <div>
-                        <Link to="/contact">Contact</Link>
-                    </div>
-                </nav>
-            </React.Fragment>
+            <div className="nav-header">
+                <Link to="/" className="nav-title">
+                    Avicia Fernandes
+                </Link>
+                <Link to="/" className="nav-link">
+                    Home
+                </Link>
+                <Link to="/sketch" className="nav-link">
+                    Sketch
+                </Link>
+                <Link to="/commission" className="nav-link" style={{ minWidth: '165px' }}>
+                    Commissions
+                </Link>
+                <Link to="/about" className="nav-link">
+                    About
+                </Link>
+            </div >
         );
     }
 }
