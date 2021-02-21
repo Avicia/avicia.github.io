@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer } from "../../Styles";
+import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer, PageTitle } from "../../Styles";
 import wiseBrains from "../../assets/100daysOfSketch/Wise-brains.png";
 import fire from "../../assets/100daysOfSketch/Fire2.png";
 import './style.css';
@@ -9,7 +9,8 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            imageList: []
+            imageList: [],
+            colLength: 4
         }
     }
     importAll = (r) => {
@@ -42,38 +43,59 @@ class Home extends Component {
             height: '23vh',
             flexDirection: 'row',
             flex: 9,
+            backgroundImage: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F10lja23.files.wordpress.com%2F2014%2F09%2Fcubism-1.jpg&f=1&nofb=1)',
+            backgroundSize: 'contain',
+            // filter: 'blur(1px)',
+        }
+        const setFolder = (folder) => {
+            switch (folder) {
+                case 'HDOS':
+                    this.setState({ imageList: HDOS })
+                    this.setState({ colLength: 4 })
+                    break;
+                case 'IN2020':
+                    this.setState({ imageList: IN2020 })
+                    this.setState({ colLength: 3 })
+                    break;
+                default:
+                    alert("Error!")
+            }
+            window.scroll({
+                top: 500,
+                behavior: 'smooth' 
+            });
         }
         return (
             <MainContainer>
-                <h2 className="text-center">CATEGORY</h2>
+                <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
                 <FlexRow>
-                    <FlexCol className="onhover " style={boxNavs} onClick={() => this.setState({ imageList: HDOS })}>
+                    <FlexCol className=" " style={boxNavs} onClick={() => setFolder('HDOS')}>
                         <div style={card_body}></div>
                         <div style={card_caption}>100daysOfSketching</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => { this.setState({ imageList: IN2020 }) }}>
+                    <FlexCol className="onhover" style={boxNavs} onClick={() => { setFolder('IN2020') }}>
                         <div style={card_body}></div>
                         <div style={card_caption}>Inktober2020</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => this.setState({ imageList: HDOS })}>
+                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('HDOS')}>
                         <div style={card_body}></div>
                         <div style={card_caption}>Inktober2020</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => this.setState({ imageList: IN2020 })}>
+                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
                         <div style={card_body}></div>
                         <div style={card_caption}>Inktober2020</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => this.setState({ imageList: IN2020 })}>
+                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
                         <div style={card_body}></div>
                         <div style={card_caption}>Inktober2020</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => this.setState({ imageList: IN2020 })}>
+                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
                         <div style={card_body}></div>
                         <div style={card_caption}>Inktober2020</div>
                     </FlexCol>
 
                 </FlexRow>
-                <ImageGallery imageList={this.state.imageList} colLength="4" />
+                <ImageGallery imageList={this.state.imageList} colLength={this.state.colLength} />
             </MainContainer >
         );
     }

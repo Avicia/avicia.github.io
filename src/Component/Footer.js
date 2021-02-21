@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { FlexCol, FlexContainer, FlexRow } from "../Styles";
+import { Link } from "react-router-dom";
+import { FlexCol, FlexContainerCOl, FlexRow } from "../Styles";
 
 class Footer extends Component {
     constructor(props) {
@@ -8,14 +9,27 @@ class Footer extends Component {
     }
     render() {
         return (
-            <FlexContainer>
-                <div></div>
-                <FlexRow>
-                    <FlexCol></FlexCol>
-                    <FlexCol></FlexCol>
-                    <FlexCol></FlexCol>
+            <FlexContainerCOl style={{ background: 'lightgrey', padding: '4%' }}>
+                <FlexRow style={{ justifyContent: "center" }}>
+                    <FlexCol style={{ maxWidth: 200, padding: 20, }}>
+                        ICON &nbsp;&nbsp;&nbsp;&nbsp;ICON
+                    </FlexCol>
                 </FlexRow>
-            </FlexContainer>
+                <FlexRow style={{ justifyContent: "center" }}>
+                    <Link to="/" className="nav-link" style={{ flex: 'none' }}>
+                        Porfolio
+                    </Link>
+                    <Link to="/sketch" className="nav-link" style={{ flex: 'none' }}>
+                        Sketch
+                    </Link>
+                    <Link to="/commission" className="nav-link" style={{ flex: 'none' }}>
+                        Commissions
+                    </Link>
+                    <Link to="/about" className="nav-link" style={{ flex: 'none' }}>
+                        About
+                    </Link>
+                </FlexRow>
+            </FlexContainerCOl>
         );
     }
 }

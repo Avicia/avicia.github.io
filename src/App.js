@@ -10,6 +10,7 @@ import Sketch from './Pages/Sketch';
 import Commission from './Pages/Commission';
 import Home from './Pages/Home';
 import Header from './Component/Header';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Commission />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

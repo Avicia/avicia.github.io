@@ -14,12 +14,12 @@ class Header extends Component {
                     Avicia Fernandes
                 </Link>
                 <Link to="/" className="nav-link">
-                    Home
+                    Porfolio
                 </Link>
                 <Link to="/sketch" className="nav-link">
                     Sketch
                 </Link>
-                <Link to="/commission" className="nav-link" style={{ minWidth: '165px' }}>
+                <Link to="/commission" className="nav-link">
                     Commissions
                 </Link>
                 <Link to="/about" className="nav-link">

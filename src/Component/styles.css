@@ -13,7 +13,7 @@
     align-items: center;
     background-color: var(--bgColor);
     height: 10%;
-    padding: 3% 14%;
+    padding: 3% 19%;
 }
 
 .nav-title {
@@ -26,16 +26,32 @@
 
 .nav-link {
     flex: 1;
-    min-width: 100px;
+    width: 120px;
+    text-align: center;
     color: var(--fontColor);
     flex-shrink: 1;
     text-decoration: none;
-    font-family: var(--fontFamily);
-    font-size: 20px;
-    font-weight: 400;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2em;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
     color: #c93d48;
 }
+
+
+/* 
+@media screen and (max-width: 600px) {
+    .nav-header {
+        text-align: center;
+    }
+    .nav-title {
+        flex: auto;
+    }
+    .nav-link {
+        min-width: 200px;
+    }
+} */
