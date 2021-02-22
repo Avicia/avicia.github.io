@@ -11,26 +11,37 @@ import Commission from './Pages/Commission';
 import Home from './Pages/Home';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
+import LandingPage from './Pages/Landing';
 
 function App() {
   return (
     <Router>
-      <Header />
       <Switch>
         <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route path="/portfolio">
+          <Header />
           <Home />
+          <Footer />
         </Route>
         <Route path="/about">
+          <Header />
           <About />
+          <Footer />
         </Route>
         <Route path="/sketch">
+          <Header />
           <Sketch />
+          <Footer />
         </Route>
         <Route path="/commission">
+          <Header />
           <Commission />
+          <Footer />
+          <Footer />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }

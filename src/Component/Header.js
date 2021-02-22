@@ -10,14 +10,14 @@ class Header extends Component {
     render() {
         return (
             <div className="nav-header">
-                <Link to="/" className="nav-title">
+                <Link to="/" className="nav-title onhover-black">
                     Avicia Fernandes
                 </Link>
-                <Link to="/" className="nav-link">
-                    Porfolio
+                <Link to="/portfolio" className="nav-link">
+                    Portfolio
                 </Link>
                 <Link to="/sketch" className="nav-link">
-                    Sketch
+                    SketchBook
                 </Link>
                 <Link to="/commission" className="nav-link">
                     Commissions

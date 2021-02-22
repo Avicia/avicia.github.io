@@ -9,10 +9,10 @@ class ImageGallery extends Component {
     }
     render() {
         const divCss = {
-            'paddingBottom': '13px',
+            'paddingBottom': '50px',
         }
         const imagesCss = {
-            'boxShadow': '0px 4px 8px -4px black',
+            // 'boxShadow': '0px 4px 8px -4px black',
             'WebkitAnimationName': 'fadeIn',
             'animationName': 'fadeIn',
             'WebkitAnimationDuration': '3s',

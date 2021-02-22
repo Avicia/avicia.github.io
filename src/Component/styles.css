@@ -13,28 +13,38 @@
     align-items: center;
     background-color: var(--bgColor);
     height: 10%;
-    padding: 3% 19%;
+    padding: 3% 14%;
+    flex-wrap: wrap;
 }
 
 .nav-title {
     flex: 6;
     text-decoration: none;
-    color: var(--fontColor);
-    font-size: 30px;
-    font-weight: 700;
+    color: red;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: impact;
+    letter-spacing: 1px;
+    min-width: 396px;
+    line-height: 2;
+}
+
+.color-white {
+    color: white;
 }
 
 .nav-link {
     flex: 1;
     width: 120px;
-    text-align: center;
+    margin: 0px 0px 0px 25px;
     color: var(--fontColor);
     flex-shrink: 1;
     text-decoration: none;
     font-family: inherit;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: .2em;
+    text-align: center;
     text-transform: uppercase;
 }
 

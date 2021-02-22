@@ -22,18 +22,18 @@ class About extends Component {
                 <div className="flex_col">
                     <Divider />
                     <PageHead>Hello, I'm Avicia.</PageHead>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;20 year old kid who lives in Mumbai, India. I call myself an artist not because I can draw like Salvador Dali or Kim Jung Gi but just simply because I love art, it makes me happy and yes ofcourse because I can draw. I did art in school but did not embrace it enough until recently, who knew the pandemic could affect you positively as well. I always associated myself with art since I was a kid but never really thought of it as a career option. And here I am surviving off the thing I love to do the most.</p>
+                    <p className="about_paras">20 year old kid who lives in Mumbai, India. I call myself an artist not because I can draw like Salvador Dali or Kim Jung Gi but just simply because I love art, it makes me happy and yes ofcourse because I can draw. I did art in school but did not embrace it enough until recently, who knew the pandemic could affect you positively as well. I always associated myself with art since I was a kid but never really thought of it as a career option. And here I am surviving off the thing I love to do the most.</p>
                     <Divider />
                 </div>
                 <div className="flex_col">
-                    <p>In another universe, If I wasn't an Illustrator.</p>
+                    <p className="about_paras">In another universe, If I wasn't an Illustrator.</p>
                     <img width="100%" src={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fkillscreen.com%2Fversions%2Fwp-content%2Fuploads%2Fsites%2F2%2F2016%2F10%2Fec66dc405355925af31e991fc661b1c6.jpg%3Ffit%3D2640%252C1486%26ssl%3D1&f=1&nofb=1'} />
                     <Divider />
                 </div>
                 <div className="flex_col">
-                    <p style={{ fontWeight: 'bold' }}>So you want to know more?</p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;In 2016 I finished my school and hopped into college. Well, as you read before I was not planning on making art my career so I,
+                    <p className="about_title">So you want to know more?</p>
+                    <p className="about_paras">
+                        In 2016 I finished my school and hopped into college. Well, as you read before I was not planning on making art my career so I,
                         a very intelligent young girl applied at St. Xavier's College (Fort) to complete my junior college in SCIENCE.
                         Yes like every kid who's first career choice is to become a Doctor, I went for it. (Not a human doctor
                         ofcourse I am not that smart, but close enough, a Vet. PS - I love animals.) Little did

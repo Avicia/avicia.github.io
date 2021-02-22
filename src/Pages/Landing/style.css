@@ -1,0 +1,41 @@
+.landing_title {
+    color: red;
+    font-family: 'impact';
+    font-size: 49px;
+    text-align: right;
+}
+
+.landing_title2 {
+    font-size: 30px;
+    width: 19%;
+    font-family: 'brandon-grotesque';
+    font-weight: 800;
+    float: left;
+    text-align: right;
+    line-height: 0.8;
+}
+
+.landing_img {
+    width: 80%;
+    max-width: 450px;
+    float: left;
+    height: 550px;
+}
+
+.landing_block {
+    width: 100%;
+}
+
+.landing_button {
+    color: black;
+    text-decoration: none;
+    font-size: 54px;
+    width: 100%;
+    float: left;
+    font-family: 'impact';
+    transition: 0.4s ease-in-out;
+}
+
+.landing_button:hover {
+    color: red;
+}

@@ -1,6 +1,10 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexContainerCOl, FlexRow } from "../Styles";
+import { FaBeer } from 'react-icons/fa';
+import { RiInstagramFill } from 'react-icons/ri';
+import { IconContext } from "react-icons/lib";
+import './colors.css'
 
 class Footer extends Component {
     constructor(props) {
@@ -9,25 +13,28 @@ class Footer extends Component {
     }
     render() {
         return (
-            <FlexContainerCOl style={{ background: 'lightgrey', padding: '4%' }}>
+            <FlexContainerCOl className="color" style={{ background: 'black', padding: '2.5%', color: 'white' }}>
                 <FlexRow style={{ justifyContent: "center" }}>
-                    <FlexCol style={{ maxWidth: 200, padding: 20, }}>
-                        ICON &nbsp;&nbsp;&nbsp;&nbsp;ICON
+                    <FlexCol style={{ maxWidth: 200, padding: 20, color: 'white' }}>
+                        <RiInstagramFill size={25} style={{ color: 'white' }} className="onhover-red" />&nbsp;&nbsp;&nbsp;&nbsp; <RiInstagramFill size={25} className="color-white" />
                     </FlexCol>
                 </FlexRow>
-                <FlexRow style={{ justifyContent: "center" }}>
-                    <Link to="/" className="nav-link" style={{ flex: 'none' }}>
-                        Porfolio
+                <FlexRow style={{ justifyContent: "center", marginBottom: 15 }}>
+                    <Link to="/portfolio" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
+                        Portfolio
                     </Link>
-                    <Link to="/sketch" className="nav-link" style={{ flex: 'none' }}>
-                        Sketch
+                    <Link to="/sketch" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
+                        SketchBook
                     </Link>
-                    <Link to="/commission" className="nav-link" style={{ flex: 'none' }}>
+                    <Link to="/commission" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         Commissions
                     </Link>
-                    <Link to="/about" className="nav-link" style={{ flex: 'none' }}>
+                    <Link to="/about" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         About
                     </Link>
+                </FlexRow>
+                <FlexRow>
+                    <Link className="nav-link onhover-red" style={{ color: 'white' }}>All rights reserved ©️ Jessica Karpishin</Link>
                 </FlexRow>
             </FlexContainerCOl>
         );

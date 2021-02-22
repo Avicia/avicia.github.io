@@ -22,39 +22,66 @@ class Home extends Component {
     render() {
         const IN2020 = this.importAll(require.context('../../assets/Inktober2020/', false, /\.(png|jpe?g|svg)$/));
         const HDOS = this.importAll(require.context('../../assets/100daysOfSketch/', false, /\.(png|jpe?g|svg)$/));
+        const BRs = this.importAll(require.context('../../assets/BaskinRobbins/', false, /\.(png|jpe?g|svg)$/));
+        const CDs = this.importAll(require.context('../../assets/CharacterDesign/', false, /\.(png|jpe?g|svg)$/));
+        const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(png|jpe?g|svg)$/));
+        const Sticker = this.importAll(require.context('../../assets/Stickers/', false, /\.(png|jpe?g|svg)$/));
         const boxNavs = {
             minWidth: '25%',
             margin: '1%',
             flexShrink: 1,
             textAlign: 'center',
-            border: '1px solid #ba9f9f',
-            borderRadius: '3px',
-            // padding: '82px 60px',
+            position: 'relative'
         }
         const card_caption = {
+            textAlign: 'center',
             height: 'auto',
             padding: '4px',
             flex: 1,
             flexDirection: 'row',
-            background: '#9e9e9e',
-            color: 'white',
+            color: 'black',
+            textTransform: 'uppercase',
+            fontFamily: 'impact',
+            fontSize: 30,
+            lineHeight: 2,
+            position: 'absolute',
+            top: '40%',
+            width: '100%',
+            color: 'white'
         }
         const card_body = {
-            height: '23vh',
+            position: 'relative',
+            height: '360px',
+            width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F10lja23.files.wordpress.com%2F2014%2F09%2Fcubism-1.jpg&f=1&nofb=1)',
-            backgroundSize: 'contain',
-            // filter: 'blur(1px)',
+            backgroundImage: 'url(https://static.wixstatic.com/media/21b326_846aab5eb34e4b6a9aa45328bb846ee1~mv2_d_5400_3541_s_4_2.jpg/v1/fill/w_471,h_309,fp_0.50_0.50,q_90/21b326_846aab5eb34e4b6a9aa45328bb846ee1~mv2_d_5400_3541_s_4_2.webp)',
+            backgroundSize: 'cover',
         }
         const setFolder = (folder) => {
             switch (folder) {
                 case 'HDOS':
                     this.setState({ imageList: HDOS })
-                    this.setState({ colLength: 4 })
+                    this.setState({ colLength: 3 })
                     break;
                 case 'IN2020':
                     this.setState({ imageList: IN2020 })
+                    this.setState({ colLength: 3 })
+                    break;
+                case 'BRs':
+                    this.setState({ imageList: BRs })
+                    this.setState({ colLength: 3 })
+                    break;
+                case 'OAF':
+                    this.setState({ imageList: OAF })
+                    this.setState({ colLength: 3 })
+                    break;
+                case 'Sticker':
+                    this.setState({ imageList: Sticker })
+                    this.setState({ colLength: 3 })
+                    break;
+                case 'CDs':
+                    this.setState({ imageList: CDs })
                     this.setState({ colLength: 3 })
                     break;
                 default:
@@ -62,36 +89,36 @@ class Home extends Component {
             }
             window.scroll({
                 top: 500,
-                behavior: 'smooth' 
+                behavior: 'smooth'
             });
         }
         return (
             <MainContainer>
                 <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
                 <FlexRow>
-                    <FlexCol className=" " style={boxNavs} onClick={() => setFolder('HDOS')}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>100daysOfSketching</div>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('BRs')}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => { setFolder('IN2020') }}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>Inktober2020</div>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('HDOS')}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red onView" style={card_caption}>100 Days of Sketching</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('HDOS')}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>Inktober2020</div>
+                    <FlexCol style={boxNavs} onClick={() => { setFolder('IN2020') }}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red" style={card_caption}>Inktober 2020</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>Inktober2020</div>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('CDs')}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red" style={card_caption}>Character Design</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>Inktober2020</div>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('Sticker')}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red" style={card_caption}>Stickers</div>
                     </FlexCol>
-                    <FlexCol className="onhover" style={boxNavs} onClick={() => setFolder('IN2020')}>
-                        <div style={card_body}></div>
-                        <div style={card_caption}>Inktober2020</div>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('OAF')}>
+                        <div className="onView" style={card_body}></div>
+                        <div className="onhover-red" style={card_caption}>OtakuAF</div>
                     </FlexCol>
 
                 </FlexRow>
