@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer, PageTitle } from "../../Styles";
+import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer, PageTitle, BackArrow } from "../../Styles";
 import wiseBrains from "../../assets/100daysOfSketch/Wise-brains.png";
 import fire from "../../assets/100daysOfSketch/Fire2.png";
-import './style.css';
+import { MdKeyboardBackspace, MdKeyboardArrowLeft } from "react-icons/md";
 import ImageGallery from "../../Component/ImageGallery";
+import './style.css';
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
             imageList: [],
-            colLength: 4
+            colLength: 4,
+            showGallery: false
         }
     }
     importAll = (r) => {
@@ -31,9 +33,11 @@ class Home extends Component {
             margin: '1%',
             flexShrink: 1,
             textAlign: 'center',
-            position: 'relative'
+            position: 'relative',
+            overflow: "hidden"
         }
         const card_caption = {
+            pointerEvents: "none",
             textAlign: 'center',
             height: 'auto',
             padding: '4px',
@@ -59,6 +63,7 @@ class Home extends Component {
             backgroundSize: 'cover',
         }
         const setFolder = (folder) => {
+            this.setState({ showGallery: !this.state.showGallery })
             switch (folder) {
                 case 'HDOS':
                     this.setState({ imageList: HDOS })
@@ -88,21 +93,28 @@ class Home extends Component {
                     alert("Error!")
             }
             window.scroll({
-                top: 500,
+                top: 200,
                 behavior: 'smooth'
             });
         }
         return (
             <MainContainer>
+                {
+                    this.state.showGallery ?
+                        <BackArrow>
+                            <MdKeyboardArrowLeft size={50} style={{ fontWeight: 'bolder' }} onClick={() => this.setState({ showGallery: !this.state.showGallery })} />
+                        </BackArrow> : null
+                }
                 <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
-                <FlexRow>
+                <FlexRow style={{ display: (this.state.showGallery ? "none" : "flex") }}>
+                    {/* // <FlexRow style={{  display:"none" }}> */}
                     <FlexCol style={boxNavs} onClick={() => setFolder('BRs')}>
                         <div className="onView" style={card_body}></div>
                         <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('HDOS')}>
                         <div className="onView" style={card_body}></div>
-                        <div className="onhover-red onView" style={card_caption}>100 Days of Sketching</div>
+                        <div className="onhover-red" style={card_caption}>100 Days of Sketching</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => { setFolder('IN2020') }}>
                         <div className="onView" style={card_body}></div>
@@ -120,9 +132,13 @@ class Home extends Component {
                         <div className="onView" style={card_body}></div>
                         <div className="onhover-red" style={card_caption}>OtakuAF</div>
                     </FlexCol>
-
                 </FlexRow>
-                <ImageGallery imageList={this.state.imageList} colLength={this.state.colLength} />
+                <ImageGallery
+                    imageList={this.state.imageList}
+                    colLength={this.state.colLength}
+                    showGallery={this.state.showGallery}
+
+                />
             </MainContainer >
         );
     }

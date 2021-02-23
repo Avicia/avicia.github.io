@@ -23,6 +23,7 @@ export const FlexRow = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition:"2s ease-in";
 `;
 
 export const FlexCol = styled.div`
@@ -87,4 +88,10 @@ export const FlexOptions = styled.div`
     color: black;
     justify-content: space-between;
     font-family: sans-serif;
+`;
+export const BackArrow = styled.div`
+    position: fixed;
+    left: 100px;
+    top: 306px;
+    
 `;

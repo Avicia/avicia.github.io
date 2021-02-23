@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexContainer, FlexRow } from "../../Styles";
+import JetPack from '../../assets/100daysOfSketch/Jetpack.png';
 import "./style.css";
 
 class LandingPage extends Component {
@@ -18,7 +19,7 @@ class LandingPage extends Component {
                     }}>
                         <div className="landing_title">AVICIA FERNANDES</div>
                         <img
-                            src="http://localhost:3000/static/media/Jetpack.d9447564.png"
+                            src={JetPack}
                             width="403" height="550" className="landing_img" />
                         <div className="landing_title2">Illustrator</div>
                         <div className="landing_block">

@@ -18,10 +18,14 @@ class Sketch extends Component {
                 <FlexRow>
                     <PageTitle>You have officially unlocked the sacred pages.</PageTitle>
                 </FlexRow>
-                <FlexRow>
-                    <ImageGallery imageList={imageList} colLength="3" />
+                <FlexRow style={{
+                    minHeight: '40vh'
+                }}>
+                    <ImageGallery
+                        imageList={imageList} colLength="3"
+                        showGallery={true} />
                 </FlexRow>
-            </MainContainer>
+            </MainContainer >
         );
     }
 }

@@ -18,8 +18,12 @@ class Commission extends Component {
                 <FlexRow>
                     <PageTitle>I drew a lot, now I draw to make everyone around me happy. This is my Happiness.</PageTitle>
                 </FlexRow>
-                <FlexRow>
-                    <ImageGallery imageList={imageList} colLength="3" />
+                <FlexRow style={{
+                    minHeight: '40vh'
+                }}>
+                    <ImageGallery imageList={imageList} colLength="3" 
+                    showGallery={true}
+                    />
                 </FlexRow>
             </MainContainer>
         );

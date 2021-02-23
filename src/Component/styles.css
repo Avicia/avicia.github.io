@@ -17,6 +17,21 @@
     flex-wrap: wrap;
 }
 
+.navigationDrawer {
+    position: fixed;
+    top: 1px;
+    left: 1%;
+    height: 56vh;
+    background: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.navigationDrawer>div {
+    text-align: center;
+    line-height: 3;
+}
+
 .nav-title {
     flex: 6;
     text-decoration: none;

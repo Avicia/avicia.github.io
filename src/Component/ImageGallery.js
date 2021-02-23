@@ -22,28 +22,34 @@ class ImageGallery extends Component {
         const totCols = parseInt(this.props.colLength);
         const colLength = Math.round(img.length / totCols);//1
         return (
-            <FlexContainer className="cus_cursor">
+            <FlexContainer
+                className="cus_cursor"
+                style={{ display: (this.props.showGallery ? "flex" : 'none') }}
+            >
                 {
-                    Array(totCols).fill(1).map((v, ind) => {
-                        console.log(img);
-                        return (
-                            <FlexPicsColumn key={ind}>
-                                {
-                                    (true ?
-                                        img.slice(colLength * ind, colLength * (ind + 1)).map((v, i) => {
-                                            console.log(ind);
-                                            return (
-                                                <div key={i} style={divCss}>
-                                                    <img src={v.default} width="100%" alt="image1" style={imagesCss} />
-                                                </div>
-                                            )
-                                        }) :
-                                        <div></div>
-                                    )
-                                }
-                            </FlexPicsColumn>
-                        )
-                    })
+                    (img.length > 0 ?
+                        Array(totCols).fill(1).map((v, ind) => {
+                            console.log(img);
+                            return (
+                                <FlexPicsColumn key={ind}>
+                                    {
+                                        (true ?
+                                            img.slice(colLength * ind, colLength * (ind + 1)).map((v, i) => {
+                                                console.log(ind);
+                                                return (
+                                                    <div key={i} style={divCss}>
+                                                        <img src={v.default} width="100%" alt="image1" style={imagesCss} />
+                                                    </div>
+                                                )
+                                            }) :
+                                            <div></div>
+                                        )
+                                    }
+                                </FlexPicsColumn>
+                            )
+                        })
+                        :
+                        <h1 style={{ textAlign: 'center', height: 200 }}>No Image Uploaded!!</h1>)
                 }
                 {/* <FlexPicsColumn>
                     {
