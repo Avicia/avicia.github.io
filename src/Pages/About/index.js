@@ -1,5 +1,6 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
+import sendNodeMail from "../../Component/Email/sendEmailJS";
 import { Divider, FlexCol, FlexRow, LinkButton, MainContainer, PageHead, PageTitle } from "../../Styles";
 import "./style.css";
 
@@ -66,18 +67,18 @@ class About extends Component {
                                         <StyledInput type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Enter Email" />
                                     </div>
                                     <div className="flex_col">
-                                        <StyledInput type="text" name="address" value={this.state.address} onChange={this.handleChange} placeholder="Enter Address" />
+                                        <StyledInput type="text" name="message" value={this.state.message} onChange={this.handleChange} placeholder="Enter Message" />
                                     </div>
                                     <div className="flex_col">
-                                        <StyledButton type="submit" name="submit" onClick={(e) => { alert("Message Sent!!") }} value="Send >" />
+                                        <StyledButton type="submit" name="submit" onClick={(e) => {
+                                            sendNodeMail(this.state.name, this.state.email, 'A New Message from the ' + this.state.name, this.state.message)
+                                            alert("Message Sent!!")
+                                        }} value="Send >" />
                                     </div>
                                 </div>
                             </div>
                     )
                 }
-
-
-
             </MainContainer>
         );
     }
@@ -101,7 +102,7 @@ const StyledButton = styled.input`
     padding: 10px 10px;
     margin: 5px;
     font-size: 18px;
-    background: lightgreen;
+    background: #06c106;
     color: white;
 `;
 

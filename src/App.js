@@ -12,8 +12,12 @@ import Home from './Pages/Home';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import LandingPage from './Pages/Landing';
+import emailjs from 'emailjs-com';
+
 
 function App() {
+  emailjs.init("user_IAmfWoSw7kvklzY9uZFf9");
+
   return (
     <Router>
       <Switch>

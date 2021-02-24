@@ -1,9 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexContainerCOl, FlexRow } from "../Styles";
-import { FaBeer } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
-import { IconContext } from "react-icons/lib";
+import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiGoogleLine } from 'react-icons/ri';
 import './colors.css'
 
 class Footer extends Component {
@@ -13,10 +11,13 @@ class Footer extends Component {
     }
     render() {
         return (
-            <FlexContainerCOl className="color" style={{ background: 'black', padding: '2.5%', color: 'white' }}>
+            <FlexContainerCOl className="color" style={{ marginTop:150 ,background: 'black', padding: '2.5%', color: 'white' }}>
                 <FlexRow style={{ justifyContent: "center" }}>
                     <FlexCol style={{ maxWidth: 200, padding: 20, color: 'white' }}>
-                        <RiInstagramFill size={25} style={{ color: 'white' }} className="onhover-red" />&nbsp;&nbsp;&nbsp;&nbsp; <RiInstagramFill size={25} className="color-white" />
+                        <RiInstagramLine size={25} style={{ fontWeight: 'bolder' }} className="onhover-red" />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiFacebookLine size={25} className="onhover-red" />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiLinkedinLine size={25} className="onhover-red" />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiGoogleLine size={25} className="onhover-red" />
                     </FlexCol>
                 </FlexRow>
                 <FlexRow style={{ justifyContent: "center", marginBottom: 15 }}>
@@ -34,7 +35,7 @@ class Footer extends Component {
                     </Link>
                 </FlexRow>
                 <FlexRow>
-                    <Link className="nav-link onhover-red" style={{ color: 'white' }}>All rights reserved ©️ Jessica Karpishin</Link>
+                    <Link className="nav-link onhover-red" style={{ color: 'white', fontSize: 12 }}>All rights reserved ©️ Avicia Fernandes</Link>
                 </FlexRow>
             </FlexContainerCOl>
         );

@@ -18,18 +18,37 @@ class Header extends Component {
                     this.state.showNavigationBar ?
                         <div className="navigationDrawer">
                             <div>
-                                <div className="nav-title onhover-black" onClick={(e) => {
-                                    e.preventDefault()
-                                    this.setState({ showNavigationBar: false })
-                                }}>
-                                    Avicia Fernandes
-                                    &nbsp;&nbsp;
-                                    <MdClose
-                                        size={40} color={'red'} style={{ color: 'red' }}
-                                        onClick={() =>
-                                            this.setState({ showNavigationBar: false })
-                                        }
-                                    />
+                                <div className="nav-title"
+                                    style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' }}
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        this.setState({ showNavigationBar: false })
+                                    }}>
+                                    <div
+                                        className="onhover-black"
+                                        style={{
+                                            flexShrink: 1,
+                                            flexGrow: 0,
+                                            flexBasis: 500,
+                                            height: 'auto',
+                                            fontFamily: 'impact',
+                                        }}>
+                                        Avicia Fernandes
+                                    </div>
+                                    <div style={{
+                                        flexShrink: 1,
+                                        flexGrow: 0,
+                                        flexBasis: 200,
+                                        height: 'auto'
+                                    }}>
+                                        <MdClose
+                                            size={40} color={'red'} style={{ color: 'red' }}
+                                            className="onhover-black"
+                                            onClick={() =>
+                                                this.setState({ showNavigationBar: false })
+                                            }
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div>

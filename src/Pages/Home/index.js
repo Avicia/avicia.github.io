@@ -105,9 +105,10 @@ class Home extends Component {
                             <MdKeyboardArrowLeft size={50} style={{ fontWeight: 'bolder' }} onClick={() => this.setState({ showGallery: !this.state.showGallery })} />
                         </BackArrow> : null
                 }
-                <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
                 <FlexRow style={{ display: (this.state.showGallery ? "none" : "flex") }}>
-                    {/* // <FlexRow style={{  display:"none" }}> */}
+                    <div style={{ width: '100%' }}>
+                        <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
+                    </div>
                     <FlexCol style={boxNavs} onClick={() => setFolder('BRs')}>
                         <div className="onView" style={card_body}></div>
                         <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
