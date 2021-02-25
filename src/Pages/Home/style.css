@@ -16,12 +16,24 @@
     }
 }
 
+.card_body {
+    position: 'relative';
+    height: '360px';
+    width: '360px';
+    flex-direction: 'row';
+    flex: 9;
+    background: 'url(./BaskinRobbins.webp)';
+    background-size: 'cover';
+    transition: '0.4s ease-in';
+}
+
 .onhover:hover {
     filter: drop-shadow(0px 2px 2px black);
 }
 
 .onView:hover {
     filter: brightness(0.2);
+    transform: scale(1.2);
 }
 
 .hideGallery {

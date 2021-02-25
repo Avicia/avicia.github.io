@@ -5,8 +5,9 @@ const sender = {
     service: 'gmail',
     auth: {
         user: 'developeravicia@gmail.com',
-        pass: 'KonnichiwaAvicia',
-        service_id: 'service_i4w43l9'
+        pass: process.env.REACT_APP_PASSWORD,
+        service_id: process.env.REACT_APP_SERVICEID,
+        template_id: process.env.REACT_APP_SERVICEID,
     }
 }
 export default function sendNodeMail(fromName, fromEmail, subject, message) {
@@ -24,7 +25,8 @@ export default function sendNodeMail(fromName, fromEmail, subject, message) {
     console.log('Message sent', '\n' + fromName);
     console.log(fromEmail);
     console.log(message);
-    emailjs.send('service_i4w43l9', 'template_6sbm5o2', params)
+    // emailjs.send('service_i4w43l9', 'template_6sbm5o2', params)
+    emailjs.send(sender.service_id, sender.template_id, params)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
         }, function (error) {

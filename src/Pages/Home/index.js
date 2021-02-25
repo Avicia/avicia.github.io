@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer, PageTitle, BackArrow } from "../../Styles";
+import { FlexRow, FlexCol, MainContainer, PageTitle, BackArrow } from "../../Styles";
 import wiseBrains from "../../assets/100daysOfSketch/Wise-brains.png";
-import fire from "../../assets/100daysOfSketch/Fire2.png";
+import DaysOfSketching from "../../assets/100daysOfSketch/Fire2.png";
+import BaskinRobbins from "../../assets/Thumbnails/BaskinRobbins.webp";
 import { MdKeyboardBackspace, MdKeyboardArrowLeft } from "react-icons/md";
 import ImageGallery from "../../Component/ImageGallery";
 import './style.css';
@@ -53,14 +54,65 @@ class Home extends Component {
             width: '100%',
             color: 'white'
         }
-        const card_body = {
+        const card_body1 = {
             position: 'relative',
             height: '360px',
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: 'url(https://static.wixstatic.com/media/21b326_846aab5eb34e4b6a9aa45328bb846ee1~mv2_d_5400_3541_s_4_2.jpg/v1/fill/w_471,h_309,fp_0.50_0.50,q_90/21b326_846aab5eb34e4b6a9aa45328bb846ee1~mv2_d_5400_3541_s_4_2.webp)',
+            backgroundImage: `url(${BaskinRobbins})`,
             backgroundSize: 'cover',
+            transition: '0.4s ease-in',
+        }
+        const card_body2 = {
+            position: 'relative',
+            height: '360px',
+            width: '360px',
+            flexDirection: 'row',
+            flex: 9,
+            backgroundImage: `url(${DaysOfSketching})`,
+            backgroundSize: 'cover',
+            transition: '0.4s ease-in',
+        }
+        const card_body3 = {
+            position: 'relative',
+            height: '360px',
+            width: '360px',
+            flexDirection: 'row',
+            flex: 9,
+            backgroundImage: `url(${wiseBrains})`,
+            backgroundSize: 'cover',
+            transition: '0.4s ease-in',
+        }
+        const card_body4 = {
+            position: 'relative',
+            height: '360px',
+            width: '360px',
+            flexDirection: 'row',
+            flex: 9,
+            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundSize: 'cover',
+            transition: '0.4s ease-in',
+        }
+        const card_body5 = {
+            position: 'relative',
+            height: '360px',
+            width: '360px',
+            flexDirection: 'row',
+            flex: 9,
+            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundSize: 'cover',
+            transition: '0.4s ease-in',
+        }
+        const card_body6 = {
+            position: 'relative',
+            height: '360px',
+            width: '360px',
+            flexDirection: 'row',
+            flex: 9,
+            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundSize: 'cover',
+            transition: '0.4s ease-in',
         }
         const setFolder = (folder) => {
             this.setState({ showGallery: !this.state.showGallery })
@@ -110,27 +162,27 @@ class Home extends Component {
                         <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
                     </div>
                     <FlexCol style={boxNavs} onClick={() => setFolder('BRs')}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body1}></div>
                         <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('HDOS')}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body2}></div>
                         <div className="onhover-red" style={card_caption}>100 Days of Sketching</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => { setFolder('IN2020') }}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body3}></div>
                         <div className="onhover-red" style={card_caption}>Inktober 2020</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('CDs')}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body4}></div>
                         <div className="onhover-red" style={card_caption}>Character Design</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('Sticker')}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body5}></div>
                         <div className="onhover-red" style={card_caption}>Stickers</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('OAF')}>
-                        <div className="onView" style={card_body}></div>
+                        <div className="onView" style={card_body6}></div>
                         <div className="onhover-red" style={card_caption}>OtakuAF</div>
                     </FlexCol>
                 </FlexRow>
@@ -144,6 +196,5 @@ class Home extends Component {
         );
     }
 }
-
 
 export default Home;

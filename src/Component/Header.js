@@ -32,6 +32,7 @@ class Header extends Component {
                                             flexBasis: 500,
                                             height: 'auto',
                                             fontFamily: 'impact',
+                                            color: 'white'
                                         }}>
                                         Avicia Fernandes
                                     </div>
@@ -42,7 +43,7 @@ class Header extends Component {
                                         height: 'auto'
                                     }}>
                                         <MdClose
-                                            size={40} color={'red'} style={{ color: 'red' }}
+                                            size={40} color={'white'} style={{ color: 'white' }}
                                             className="onhover-black"
                                             onClick={() =>
                                                 this.setState({ showNavigationBar: false })
@@ -52,22 +53,22 @@ class Header extends Component {
                                 </div>
                             </div>
                             <div>
-                                <Link to="/portfolio" className="nav-link">
+                                <Link to="/portfolio" className="nav-link color-white onhover-black">
                                     Portfolio
                                 </Link>
                             </div>
                             <div>
-                                <Link to="/sketch" className="nav-link">
+                                <Link to="/sketch" className="nav-link color-white onhover-black">
                                     SketchBook
                                 </Link>
                             </div>
                             <div>
-                                <Link to="/commission" className="nav-link">
+                                <Link to="/commission" className="nav-link color-white onhover-black">
                                     Commissions
                                 </Link>
                             </div>
                             <div>
-                                <Link to="/about" className="nav-link">
+                                <Link to="/about" className="nav-link color-white onhover-black">
                                     About
                             </Link>
                             </div>
