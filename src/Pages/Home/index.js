@@ -32,7 +32,7 @@ class Home extends Component {
         const BRs = this.importAll(require.context('../../assets/BaskinRobbins/', false, /\.(png|jpe?g|svg)$/));
         const CDs = this.importAll(require.context('../../assets/CharacterDesign/', false, /\.(png|jpe?g|svg)$/));
         const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(png|jpe?g|svg)$/));
-        const Sticker = this.importAll(require.context('../../assets/Posters/', false, /\.(png|jpe?g|svg)$/));
+        const Poster = this.importAll(require.context('../../assets/Posters/', false, /\.(png|jpe?g|svg)$/));
         const boxNavs = {
             minWidth: '25%',
             margin: '1%',
@@ -137,8 +137,8 @@ class Home extends Component {
                     this.setState({ imageList: OAF })
                     this.setState({ colLength: 3 })
                     break;
-                case 'Sticker':
-                    this.setState({ imageList: Sticker })
+                case 'Poster':
+                    this.setState({ imageList: Poster })
                     this.setState({ colLength: 3 })
                     break;
                 case 'CDs':
@@ -185,7 +185,7 @@ class Home extends Component {
                         <div className="onView" style={card_body6}></div>
                         <div className="onhover-red" style={card_caption}>OtakuAF</div>
                     </FlexCol>
-                    <FlexCol style={boxNavs} onClick={() => setFolder('Sticker')}>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('Poster')}>
                         <div className="onView" style={card_body5}></div>
                         <div className="onhover-red" style={card_caption}>Posters</div>
                     </FlexCol>
