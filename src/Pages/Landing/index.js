@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexContainer, FlexRow } from "../../Styles";
-import JetPack from '../../assets/100daysOfSketch/Jetpack.png';
+import JetPack from '../../assets/Visual_Illustrations/Jetpack.png';
 import "./style.css";
 
 class LandingPage extends Component {

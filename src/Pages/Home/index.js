@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import { FlexRow, FlexCol, MainContainer, PageTitle, BackArrow } from "../../Styles";
-import wiseBrains from "../../assets/100daysOfSketch/Wise-brains.png";
-import DaysOfSketching from "../../assets/100daysOfSketch/Fire2.png";
+import VisualIllustation_THUMBNAIL from "../../assets/Thumbnails/VisualIllustation_THUMBNAIL.png";
 import BaskinRobbins from "../../assets/Thumbnails/BaskinRobbins.webp";
-import { MdKeyboardBackspace, MdKeyboardArrowLeft } from "react-icons/md";
+import BaskinRobbins_Thumnail from "../../assets/Thumbnails/BaskinRobbins_Thumnail.png";
+import CharacterDesign_THUMBNAIL from "../../assets/Thumbnails/CharacterDesign_THUMBNAIL.png";
+import INKTOBER_THUMBNAIL from "../../assets/Thumbnails/INKTOBER_THUMBNAIL.png";
+import Posters_THUMBNAIL from "../../assets/Thumbnails/Posters_THUMBNAIL.png";
+import OtakuAF_Thumbnail from "../../assets/Thumbnails/OtakuAF_Thumbnail.png";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 import ImageGallery from "../../Component/ImageGallery";
 import './style.css';
 
@@ -24,11 +28,11 @@ class Home extends Component {
     }
     render() {
         const IN2020 = this.importAll(require.context('../../assets/Inktober2020/', false, /\.(png|jpe?g|svg)$/));
-        const HDOS = this.importAll(require.context('../../assets/100daysOfSketch/', false, /\.(png|jpe?g|svg)$/));
+        const VI = this.importAll(require.context('../../assets/Visual_Illustrations/', false, /\.(png|jpe?g|svg)$/));
         const BRs = this.importAll(require.context('../../assets/BaskinRobbins/', false, /\.(png|jpe?g|svg)$/));
         const CDs = this.importAll(require.context('../../assets/CharacterDesign/', false, /\.(png|jpe?g|svg)$/));
         const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(png|jpe?g|svg)$/));
-        const Sticker = this.importAll(require.context('../../assets/Stickers/', false, /\.(png|jpe?g|svg)$/));
+        const Sticker = this.importAll(require.context('../../assets/Posters/', false, /\.(png|jpe?g|svg)$/));
         const boxNavs = {
             minWidth: '25%',
             margin: '1%',
@@ -70,7 +74,7 @@ class Home extends Component {
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: `url(${DaysOfSketching})`,
+            backgroundImage: `url(${VisualIllustation_THUMBNAIL})`,
             backgroundSize: 'cover',
             transition: '0.4s ease-in',
         }
@@ -80,7 +84,7 @@ class Home extends Component {
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: `url(${wiseBrains})`,
+            backgroundImage: `url(${INKTOBER_THUMBNAIL})`,
             backgroundSize: 'cover',
             transition: '0.4s ease-in',
         }
@@ -90,7 +94,7 @@ class Home extends Component {
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundImage: `url(${CharacterDesign_THUMBNAIL})`,
             backgroundSize: 'cover',
             transition: '0.4s ease-in',
         }
@@ -100,7 +104,7 @@ class Home extends Component {
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundImage: `url(${Posters_THUMBNAIL})`,
             backgroundSize: 'cover',
             transition: '0.4s ease-in',
         }
@@ -110,15 +114,15 @@ class Home extends Component {
             width: '360px',
             flexDirection: 'row',
             flex: 9,
-            backgroundImage: `url(${BaskinRobbins})`,
+            backgroundImage: `url(${OtakuAF_Thumbnail})`,
             backgroundSize: 'cover',
             transition: '0.4s ease-in',
         }
         const setFolder = (folder) => {
             this.setState({ showGallery: !this.state.showGallery })
             switch (folder) {
-                case 'HDOS':
-                    this.setState({ imageList: HDOS })
+                case 'VI':
+                    this.setState({ imageList: VI })
                     this.setState({ colLength: 3 })
                     break;
                 case 'IN2020':
@@ -165,9 +169,9 @@ class Home extends Component {
                         <div className="onView" style={card_body1}></div>
                         <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
                     </FlexCol>
-                    <FlexCol style={boxNavs} onClick={() => setFolder('HDOS')}>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('VI')}>
                         <div className="onView" style={card_body2}></div>
-                        <div className="onhover-red" style={card_caption}>100 Days of Sketching</div>
+                        <div className="onhover-red" style={card_caption}>Visual Illustrations</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => { setFolder('IN2020') }}>
                         <div className="onView" style={card_body3}></div>
@@ -177,13 +181,13 @@ class Home extends Component {
                         <div className="onView" style={card_body4}></div>
                         <div className="onhover-red" style={card_caption}>Character Design</div>
                     </FlexCol>
-                    <FlexCol style={boxNavs} onClick={() => setFolder('Sticker')}>
-                        <div className="onView" style={card_body5}></div>
-                        <div className="onhover-red" style={card_caption}>Stickers</div>
-                    </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('OAF')}>
                         <div className="onView" style={card_body6}></div>
                         <div className="onhover-red" style={card_caption}>OtakuAF</div>
+                    </FlexCol>
+                    <FlexCol style={boxNavs} onClick={() => setFolder('Sticker')}>
+                        <div className="onView" style={card_body5}></div>
+                        <div className="onhover-red" style={card_caption}>Posters</div>
                     </FlexCol>
                 </FlexRow>
                 <ImageGallery
