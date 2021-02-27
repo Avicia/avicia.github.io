@@ -75,6 +75,9 @@ export const FlexPicsColumn = styled.div`
     justify-content:stretch;
     align-Items:center;
     width:30%;
+    flex-grow: 1;
+    margin: 2%;
+    max-width: 60%;
 `;
 
 export const FlexOptions = styled.div`

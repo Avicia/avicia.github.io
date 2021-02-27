@@ -56,7 +56,8 @@ class Home extends Component {
             position: 'absolute',
             top: '40%',
             width: '100%',
-            color: 'white'
+            color: 'white',
+            textShadow: '4px 3px black'
         }
         const card_body1 = {
             position: 'relative',
@@ -135,7 +136,7 @@ class Home extends Component {
                     break;
                 case 'OAF':
                     this.setState({ imageList: OAF })
-                    this.setState({ colLength: 3 })
+                    this.setState({ colLength: 1 })
                     break;
                 case 'Poster':
                     this.setState({ imageList: Poster })
