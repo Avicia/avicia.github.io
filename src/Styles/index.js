@@ -96,5 +96,5 @@ export const FlexOptions = styled.div`
 export const BackArrow = styled.div`
     position: fixed;
     left: 5%;
-    top: 25%;
+    top: 45%;
 `;

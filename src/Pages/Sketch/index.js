@@ -12,7 +12,7 @@ class Sketch extends Component {
         return r.keys().map(r);
     }
     render() {
-        const imageList = this.importAll(require.context('../../assets/Sketches/', false, /\.(png|jpe?g|svg)$/));
+        const imageList = this.importAll(require.context('../../assets/Sketches/', false, /\.(webp|png|jpe?g|svg)$/));
         return (
             <MainContainer>
                 <Divider />

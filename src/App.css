@@ -18,7 +18,7 @@
 
 * {
     font-family: 'brandon-grotesque';
-    transition: 0.4s ease-in-out;
+    /* transition: 0.4s ease-in-out; */
     scroll-behavior: smooth;
 }
 
@@ -70,6 +70,10 @@
     color: red;
     transition: 0.4s ease-in-out;
     transform: translateY(-5px);
+}
+
+.text-center {
+    text-align: center;
 }
 
 @keyframes App-logo-spin {

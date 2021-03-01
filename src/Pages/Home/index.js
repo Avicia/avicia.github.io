@@ -27,12 +27,12 @@ class Home extends Component {
 
     }
     render() {
-        const IN2020 = this.importAll(require.context('../../assets/Inktober2020/', false, /\.(png|jpe?g|svg)$/));
-        const VI = this.importAll(require.context('../../assets/Visual_Illustrations/', false, /\.(png|jpe?g|svg)$/));
-        const BRs = this.importAll(require.context('../../assets/BaskinRobbins/', false, /\.(png|jpe?g|svg)$/));
-        const CDs = this.importAll(require.context('../../assets/CharacterDesign/', false, /\.(png|jpe?g|svg)$/));
-        const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(png|jpe?g|svg)$/));
-        const Poster = this.importAll(require.context('../../assets/Posters/', false, /\.(png|jpe?g|svg)$/));
+        const IN2020 = this.importAll(require.context('../../assets/Inktober2020/', false, /\.(webp|png|jpe?g|svg)$/));
+        const VI = this.importAll(require.context('../../assets/Visual_Illustrations/', false, /\.(webp|png|jpe?g|svg)$/));
+        const BRs = this.importAll(require.context('../../assets/BaskinRobbins/', false, /\.(webp|png|jpe?g|svg)$/));
+        const CDs = this.importAll(require.context('../../assets/CharacterDesign/', false, /\.(webp|png|jpe?g|svg)$/));
+        const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(webp|png|jpe?g|svg)$/));
+        const Poster = this.importAll(require.context('../../assets/Posters/', false, /\.(webp|png|jpe?g|svg)$/));
         const boxNavs = {
             minWidth: '380px',
             margin: '1%',
@@ -165,7 +165,7 @@ class Home extends Component {
                             <span onClick={() => this.setState({ showGallery: !this.state.showGallery })} className="back_class onhover-red">BACK</span>
                         </BackArrow> : null
                 }
-                <FlexRow style={{ display: (this.state.showGallery ? "none" : "flex") }}>
+                <FlexRow style={{ marginBottom: 20, display: (this.state.showGallery ? "none" : "flex") }}>
                     <div style={{ width: '100%', marginBottom: '20px' }}
                     >
                         <Divider />

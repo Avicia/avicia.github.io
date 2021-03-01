@@ -58,11 +58,12 @@ class About extends Component {
                             </FlexRow>
                             :
                             <div class="flex_col" data-aos="fade-up" data-offset="30">
-                                <h3 className="text-center" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>Want to work with me?</h3>
-                                <p className="about_paras">
+                                <div className="about_title text-center " style={{ marginTop: 28, marginBottom: 7, textTransform: 'uppercase' }}>Want to work with me?</div>
+                                <div className="about_paras text-center">
                                     Get in touch with me at aviciafernandes@gmail.com <br />
-                                        Or Fill in below details. Let’s talk.
-                                </p>
+                                        Or Fill in below details.
+                                </div>
+                                <div className="about_title" style={{ marginTop: 15, fontFamily: 'Montserrat', fontSize: 20, textAlign: 'center' }}>Let’s talk.</div>
                                 <div className="flex_row">
                                     <div className="flex_col">
                                         <StyledInput type="text" name="name" value={this.state.name} onChange={this.handleChange} placeholder="Enter Name" />
@@ -77,7 +78,7 @@ class About extends Component {
                                         <StyledButton type="submit" name="submit" onClick={(e) => {
                                             sendNodeMail(this.state.name, this.state.email, 'A New Message from the ' + this.state.name, this.state.message)
                                             alert("Message Sent!!")
-                                        }} value="Send >" />
+                                        }} value="Send" />
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +107,7 @@ const StyledButton = styled.input`
     padding: 10px 10px;
     margin: 5px;
     font-size: 18px;
-    background: #06c106;
+    background: black;
     color: white;
 `;
 

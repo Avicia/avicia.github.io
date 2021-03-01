@@ -17,12 +17,12 @@ class Footer extends Component {
         return (
             <FlexContainerCOl className="color" style={{ marginTop: 150, background: 'black', padding: '2.5%', color: 'white' }}>
                 <FlexRow style={{ justifyContent: "center" }}>
-                    <FlexCol style={{ maxWidth: 100 }} className="onhover-bounce">
+                    <FlexCol style={{ maxWidth: 50 }} className="onhover-bounce">
                         <MdKeyboardArrowUp size={55} style={{ color: 'white', textAlign: 'center', fontWeight: 'bolder' }} onClick={() => window.scroll({ top: 0, behavior: "smooth" })} />
                     </FlexCol>
                 </FlexRow>
                 <FlexRow style={{ justifyContent: "center" }}>
-                    <FlexCol style={{ maxWidth: 350, padding: 20, color: 'white', justifyContent: 'center' }}>
+                    <FlexCol style={{ maxWidth: 330, padding: 20, color: 'white', justifyContent: 'center' }}>
                         <RiInstagramFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.instagram.com/aviciaaa/')} />
                         &nbsp;&nbsp;&nbsp;&nbsp; <RiFacebookFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.facebook.com/fernandesavicia/')} />
                         &nbsp;&nbsp;&nbsp;&nbsp; <RiLinkedinFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.linkedin.com/in/aviciafernandes/')} />
