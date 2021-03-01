@@ -13,11 +13,13 @@
 
 @font-face {
     font-family: 'impact';
-    src: url('./assets/Fonts//impact.ttf');
+    src: url('./assets/Fonts/impact.ttf');
 }
 
 * {
     font-family: 'brandon-grotesque';
+    transition: 0.4s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 .App {
@@ -62,6 +64,12 @@
 .onhover-black:hover {
     color: black!important;
     transition: 0.4s ease-in-out;
+}
+
+.onhover-bounce:hover {
+    color: red;
+    transition: 0.4s ease-in-out;
+    transform: translateY(-5px);
 }
 
 @keyframes App-logo-spin {

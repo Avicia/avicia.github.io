@@ -1,8 +1,9 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexContainerCOl, FlexRow } from "../Styles";
-import { RiInstagramLine, RiFacebookLine, RiLinkedinLine, RiGoogleLine, RiTwitterLine, RiPinterestLine, RiBehanceLine } from 'react-icons/ri';
+import { RiInstagramFill, RiFacebookFill, RiBehanceFill, RiGoogleFill, RiTwitterFill, RiLinkedinFill } from 'react-icons/ri';
 import './colors.css'
+import { MdKeyboardArrowUp } from "react-icons/md";
 
 class Footer extends Component {
     constructor(props) {
@@ -16,25 +17,30 @@ class Footer extends Component {
         return (
             <FlexContainerCOl className="color" style={{ marginTop: 150, background: 'black', padding: '2.5%', color: 'white' }}>
                 <FlexRow style={{ justifyContent: "center" }}>
-                    <FlexCol style={{ maxWidth: 240, padding: 20, color: 'white', justifyContent: 'center' }}>
-                        <RiInstagramLine size={25} className="onhover-red" onClick={() => this.redirectTo('https://www.instagram.com/aviciaaa/')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiFacebookLine size={25} className="onhover-red" onClick={() => this.redirectTo('https://www.facebook.com/fernandesavicia/')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiLinkedinLine size={25} className="onhover-red" onClick={() => this.redirectTo('https://www.linkedin.com/in/aviciafernandes/')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiTwitterLine size={25} className="onhover-red" onClick={() => this.redirectTo('https://twitter.com/FernandesAvicia')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiBehanceLine size={25} className="onhover-red" onClick={() => this.redirectTo('https://www.behance.net/AviciaFernandes')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiGoogleLine size={25} className="onhover-red" onClick={() => this.redirectTo('mailto:fernandesavicia@gmail.com')} />
+                    <FlexCol style={{ maxWidth: 100 }} className="onhover-bounce">
+                        <MdKeyboardArrowUp size={55} style={{ color: 'white', textAlign: 'center', fontWeight: 'bolder' }} onClick={() => window.scroll({ top: 0, behavior: "smooth" })} />
                     </FlexCol>
                 </FlexRow>
-                <FlexRow style={{ justifyContent: "center", marginBottom: 15 }}>
+                <FlexRow style={{ justifyContent: "center" }}>
+                    <FlexCol style={{ maxWidth: 350, padding: 20, color: 'white', justifyContent: 'center' }}>
+                        <RiInstagramFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.instagram.com/aviciaaa/')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiFacebookFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.facebook.com/fernandesavicia/')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiLinkedinFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.linkedin.com/in/aviciafernandes/')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiTwitterFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://twitter.com/FernandesAvicia')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiBehanceFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.behance.net/AviciaFernandes')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiGoogleFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('mailto:fernandesavicia@gmail.com')} />
+                    </FlexCol>
+                </FlexRow>
+                <FlexRow style={{ justifyContent: "center", marginBottom: 45 }}>
                     <Link to="/portfolio" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         Portfolio
                     </Link>
                     <Link to="/sketch" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         SketchBook
                     </Link>
-                    <Link to="/commission" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
+                    {/* <Link to="/commission" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         Commissions
-                    </Link>
+                    </Link> */}
                     <Link to="/about" className="nav-link onhover-red" style={{ flex: 'none', color: 'white' }}>
                         About
                     </Link>

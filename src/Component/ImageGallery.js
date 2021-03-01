@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer } from "../Styles";
+import { FlexContainer, FlexPicsColumn, FlexRow, FlexCol, MainContainer, Divider } from "../Styles";
 import '../Pages/Home/style.css';
 
 class ImageGallery extends Component {

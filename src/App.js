@@ -13,10 +13,12 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import LandingPage from './Pages/Landing';
 import emailjs from 'emailjs-com';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   emailjs.init("user_IAmfWoSw7kvklzY9uZFf9");
+  AOS.init();
 
   return (
     <Router>

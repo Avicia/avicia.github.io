@@ -20,14 +20,14 @@ class About extends Component {
     render() {
         return (
             <MainContainer style={{ 'font-family': 'inherit' }}>
-                <div className="flex_col">
+                <div className="flex_col" >
                     <Divider />
-                    <PageHead>Hello, I'm Avicia.</PageHead>
-                    <p className="about_paras">20 year old kid who lives in Mumbai, India. I call myself an artist not because I can draw like Salvador Dali or Kim Jung Gi but just simply because I love art, it makes me happy and yes ofcourse because I can draw. I did art in school but did not embrace it enough until recently, who knew the pandemic could affect you positively as well. I always associated myself with art since I was a kid but never really thought of it as a career option. And here I am surviving off the thing I love to do the most.</p>
+                    <PageHead>Hello, <br /> I'm Avicia.</PageHead>
+                    <p className="about_paras" style={{ marginBottom: 60 }}>20 year old kid who lives in Mumbai, India. I call myself an artist not because I can draw like Salvador Dali or Kim Jung Gi but just simply because I love art, it makes me happy and yes ofcourse because I can draw. I did art in school but did not embrace it enough until recently, who knew the pandemic could affect you positively as well. I always associated myself with art since I was a kid but never really thought of it as a career option. And here I am surviving off the thing I love to do the most.</p>
                     <Divider />
                 </div>
                 <div className="flex_col">
-                    <p className="about_paras">In another universe, If I wasn't an Illustrator.</p>
+                    <p className="about_title">In another universe, If I wasn't an Illustrator.</p>
                     <img width="100%" src={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fkillscreen.com%2Fversions%2Fwp-content%2Fuploads%2Fsites%2F2%2F2016%2F10%2Fec66dc405355925af31e991fc661b1c6.jpg%3Ffit%3D2640%252C1486%26ssl%3D1&f=1&nofb=1'} />
                     <Divider />
                 </div>
@@ -57,8 +57,12 @@ class About extends Component {
                                 </FlexCol>
                             </FlexRow>
                             :
-                            <div class="flex_col">
-                                <h3 className="text-center" style={{ fontWeight: 700 }}>Want to work with me?</h3>
+                            <div class="flex_col" data-aos="fade-up" data-offset="30">
+                                <h3 className="text-center" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>Want to work with me?</h3>
+                                <p className="about_paras">
+                                    Get in touch with me at aviciafernandes@gmail.com <br />
+                                        Or Fill in below details. Let’s talk.
+                                </p>
                                 <div className="flex_row">
                                     <div className="flex_col">
                                         <StyledInput type="text" name="name" value={this.state.name} onChange={this.handleChange} placeholder="Enter Name" />
@@ -79,7 +83,7 @@ class About extends Component {
                             </div>
                     )
                 }
-            </MainContainer>
+            </MainContainer >
         );
     }
 }

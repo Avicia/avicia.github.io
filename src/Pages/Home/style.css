@@ -32,10 +32,31 @@
 }
 
 .onView:hover {
-    filter: brightness(0.2);
+    filter: opacity(0.2);
     transform: scale(1.2);
+}
+
+div.onView:hover+div.boxes {
+    opacity: 1
+}
+
+.boxes {
+    opacity: 0
 }
 
 .hideGallery {
     display: none;
+}
+
+.back_class {
+    font-size: 38px;
+    font-family: Impact;
+    color: black;
+    letter-spacing: 2px;
+    float: left;
+    padding: 3px 0;
+}
+
+.back_arrow:hover+.back_class {
+    opacity: 1!important;
 }

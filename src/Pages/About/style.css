@@ -22,17 +22,18 @@
 }
 
 .about_title {
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: black;
 }
 
 .about_paras {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.16px;
     line-height: 28px;
-    font-family: sans-serif;
     color: black;
 }

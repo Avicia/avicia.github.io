@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlexRow, FlexCol, MainContainer, PageTitle, BackArrow } from "../../Styles";
+import { FlexRow, FlexCol, MainContainer, PageTitle, BackArrow, Divider } from "../../Styles";
 import VisualIllustation_THUMBNAIL from "../../assets/Thumbnails/VisualIllustation_THUMBNAIL.png";
 import BaskinRobbins from "../../assets/Thumbnails/BaskinRobbins.webp";
 import BaskinRobbins_Thumnail from "../../assets/Thumbnails/BaskinRobbins_Thumnail.png";
@@ -34,9 +34,9 @@ class Home extends Component {
         const OAF = this.importAll(require.context('../../assets/OtakuAF/', false, /\.(png|jpe?g|svg)$/));
         const Poster = this.importAll(require.context('../../assets/Posters/', false, /\.(png|jpe?g|svg)$/));
         const boxNavs = {
-            minWidth: '25%',
+            minWidth: '380px',
             margin: '1%',
-            flexShrink: 1,
+            flexShrink: 0,
             textAlign: 'center',
             position: 'relative',
             overflow: "hidden"
@@ -56,13 +56,13 @@ class Home extends Component {
             position: 'absolute',
             top: '40%',
             width: '100%',
-            color: 'white',
-            textShadow: '4px 3px black'
+            // color: 'white',
+            // textShadow: '4px 3px black'
         }
         const card_body1 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${BaskinRobbins})`,
@@ -72,7 +72,7 @@ class Home extends Component {
         const card_body2 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${VisualIllustation_THUMBNAIL})`,
@@ -82,7 +82,7 @@ class Home extends Component {
         const card_body3 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${INKTOBER_THUMBNAIL})`,
@@ -92,7 +92,7 @@ class Home extends Component {
         const card_body4 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${CharacterDesign_THUMBNAIL})`,
@@ -102,7 +102,7 @@ class Home extends Component {
         const card_body5 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${Posters_THUMBNAIL})`,
@@ -112,7 +112,7 @@ class Home extends Component {
         const card_body6 = {
             position: 'relative',
             height: '360px',
-            width: '360px',
+            width: 'auto',
             flexDirection: 'row',
             flex: 9,
             backgroundImage: `url(${OtakuAF_Thumbnail})`,
@@ -132,7 +132,7 @@ class Home extends Component {
                     break;
                 case 'BRs':
                     this.setState({ imageList: BRs })
-                    this.setState({ colLength: 3 })
+                    this.setState({ colLength: 2 })
                     break;
                 case 'OAF':
                     this.setState({ imageList: OAF })
@@ -159,43 +159,55 @@ class Home extends Component {
                 {
                     this.state.showGallery ?
                         <BackArrow>
-                            <MdKeyboardArrowLeft size={50} style={{ fontWeight: 'bolder' }} onClick={() => this.setState({ showGallery: !this.state.showGallery })} />
+                            {/* <span className="back_arrow">
+                                <MdKeyboardArrowLeft size={65} style={{ float: 'left', color: 'darkslategray', fontWeight: 'bolder' }} onClick={() => this.setState({ showGallery: !this.state.showGallery })} />
+                            </span> */}
+                            <span onClick={() => this.setState({ showGallery: !this.state.showGallery })} className="back_class onhover-red">BACK</span>
                         </BackArrow> : null
                 }
                 <FlexRow style={{ display: (this.state.showGallery ? "none" : "flex") }}>
-                    <div style={{ width: '100%' }}>
-                        <PageTitle> Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
+                    <div style={{ width: '100%', marginBottom: '20px' }}
+                    >
+                        <Divider />
+                        <PageTitle
+                            data-aos="fade-in"
+                            data-aos-offset="60"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                        > Avicia Fernandes is an illustrator living in Mumbai, India.</PageTitle>
+                        <Divider />
                     </div>
                     <FlexCol style={boxNavs} onClick={() => setFolder('BRs')}>
                         <div className="onView" style={card_body1}></div>
-                        <div className="onhover-red" style={card_caption}>Baskin-Robbins</div>
+                        <div className="boxes onhover-red" style={card_caption}>Baskin-Robbins</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('VI')}>
                         <div className="onView" style={card_body2}></div>
-                        <div className="onhover-red" style={card_caption}>Visual Illustrations</div>
+                        <div className="onhover-red boxes" style={card_caption}>Visual Illustrations</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => { setFolder('IN2020') }}>
                         <div className="onView" style={card_body3}></div>
-                        <div className="onhover-red" style={card_caption}>Inktober 2020</div>
+                        <div className="onhover-red boxes" style={card_caption}>Inktober 2020</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('CDs')}>
                         <div className="onView" style={card_body4}></div>
-                        <div className="onhover-red" style={card_caption}>Character Design</div>
+                        <div className="onhover-red boxes" style={card_caption}>Character Design</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('OAF')}>
                         <div className="onView" style={card_body6}></div>
-                        <div className="onhover-red" style={card_caption}>OtakuAF</div>
+                        <div className="onhover-red boxes" style={card_caption}>OtakuAF</div>
                     </FlexCol>
                     <FlexCol style={boxNavs} onClick={() => setFolder('Poster')}>
                         <div className="onView" style={card_body5}></div>
-                        <div className="onhover-red" style={card_caption}>Posters</div>
+                        <div className="onhover-red boxes" style={card_caption}>Posters</div>
                     </FlexCol>
                 </FlexRow>
+                <Divider />
                 <ImageGallery
                     imageList={this.state.imageList}
                     colLength={this.state.colLength}
                     showGallery={this.state.showGallery}
-
                 />
             </MainContainer >
         );

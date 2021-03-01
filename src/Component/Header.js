@@ -62,11 +62,11 @@ class Header extends Component {
                                     SketchBook
                                 </Link>
                             </div>
-                            <div>
+                            {/* <div>
                                 <Link to="/commission" className="nav-link color-white onhover-black">
                                     Commissions
                                 </Link>
-                            </div>
+                            </div> */}
                             <div>
                                 <Link to="/about" className="nav-link color-white onhover-black">
                                     About
@@ -76,13 +76,14 @@ class Header extends Component {
                         : null
                 }
 
-                <Link className="nav-title onhover-black" onClick={(e) => {
-                    e.preventDefault()
-                    this.setState({ showNavigationBar: true })
-                }}>
+                <Link className="nav-title onhover-black" >
                     Avicia Fernandes
                     &nbsp;&nbsp;
                     <GiHamburgerMenu
+                        onClick={(e) => {
+                            e.preventDefault()
+                            this.setState({ showNavigationBar: true })
+                        }}
                         size={40} color={'red'} style={{ color: 'red' }}
                     />
                 </Link>
@@ -92,9 +93,9 @@ class Header extends Component {
                 <Link to="/sketch" className="nav-link">
                     SketchBook
                 </Link>
-                <Link to="/commission" className="nav-link">
+                {/* <Link to="/commission" className="nav-link">
                     Commissions
-                </Link>
+                </Link> */}
                 <Link to="/about" className="nav-link">
                     About
                 </Link>

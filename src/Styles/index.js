@@ -23,7 +23,7 @@ export const FlexRow = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition:"2s ease-in";
+    transition:"0.4s ease-in";
 `;
 
 export const FlexCol = styled.div`
@@ -32,17 +32,18 @@ export const FlexCol = styled.div`
 `;
 
 export const PageTitle = styled.p`
+    font-family:'Montserrat', sans-serif;
     text-align: center;
     font-size: 26px;
-    margin: 12px;
-    padding-bottom: 30px;
+    margin: 55px;
 `;
 
 export const PageHead = styled.p`
     text-align: left;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
     font-size: 50px;
-    line-height:1.1em;
-    font-weight:700;
+    margin-bottom: 12px;
 `;
 
 export const Divider = styled.hr`
@@ -94,7 +95,6 @@ export const FlexOptions = styled.div`
 `;
 export const BackArrow = styled.div`
     position: fixed;
-    left: 100px;
-    top: 306px;
-    
+    left: 5%;
+    top: 25%;
 `;
