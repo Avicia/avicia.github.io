@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f5217ef.chunk.css",
-    "main.js": "/static/js/main.939258f6.chunk.js",
-    "main.js.map": "/static/js/main.939258f6.chunk.js.map",
+    "main.css": "/static/css/main.0f13bed4.chunk.css",
+    "main.js": "/static/js/main.2bc6dd5e.chunk.js",
+    "main.js.map": "/static/js/main.2bc6dd5e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.246b96d4.js",
     "runtime-main.js.map": "/static/js/runtime-main.246b96d4.js.map",
     "static/css/2.30fbed10.chunk.css": "/static/css/2.30fbed10.chunk.css",
-    "static/js/2.cfde4b43.chunk.js": "/static/js/2.cfde4b43.chunk.js",
-    "static/js/2.cfde4b43.chunk.js.map": "/static/js/2.cfde4b43.chunk.js.map",
+    "static/js/2.a489e1db.chunk.js": "/static/js/2.a489e1db.chunk.js",
+    "static/js/2.a489e1db.chunk.js.map": "/static/js/2.a489e1db.chunk.js.map",
     "static/js/3.96f55a67.chunk.js": "/static/js/3.96f55a67.chunk.js",
     "static/js/3.96f55a67.chunk.js.map": "/static/js/3.96f55a67.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.30fbed10.chunk.css.map": "/static/css/2.30fbed10.chunk.css.map",
-    "static/css/main.6f5217ef.chunk.css.map": "/static/css/main.6f5217ef.chunk.css.map",
-    "static/js/2.cfde4b43.chunk.js.LICENSE.txt": "/static/js/2.cfde4b43.chunk.js.LICENSE.txt",
+    "static/css/main.0f13bed4.chunk.css.map": "/static/css/main.0f13bed4.chunk.css.map",
+    "static/js/2.a489e1db.chunk.js.LICENSE.txt": "/static/js/2.a489e1db.chunk.js.LICENSE.txt",
     "static/media/1.webp": "/static/media/1.689209ee.webp",
     "static/media/1.png": "/static/media/1.b1b8528a.png",
     "static/media/10.png": "/static/media/10.9aeac3e5.png",
@@ -107,6 +107,7 @@
     "static/media/Stew-pot.png": "/static/media/Stew-pot.0f006bf2.png",
     "static/media/VisualIllustation_THUMBNAIL.3de4a73c.png": "/static/media/VisualIllustation_THUMBNAIL.3de4a73c.png",
     "static/media/WiseBrains.png": "/static/media/WiseBrains.4b5af288.png",
+    "static/media/avicia_profile.86440de6.webp": "/static/media/avicia_profile.86440de6.webp",
     "static/media/impressions.png": "/static/media/impressions.03922157.png",
     "static/media/standee.webp": "/static/media/standee.f7a848b3.webp",
     "static/media/thanksgiving-Menu.jpg": "/static/media/thanksgiving-Menu.17d8b2b8.jpg"
@@ -114,8 +115,8 @@
   "entrypoints": [
     "static/js/runtime-main.246b96d4.js",
     "static/css/2.30fbed10.chunk.css",
-    "static/js/2.cfde4b43.chunk.js",
-    "static/css/main.6f5217ef.chunk.css",
-    "static/js/main.939258f6.chunk.js"
+    "static/js/2.a489e1db.chunk.js",
+    "static/css/main.0f13bed4.chunk.css",
+    "static/js/main.2bc6dd5e.chunk.js"
   ]
 }
