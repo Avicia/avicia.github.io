@@ -130,7 +130,7 @@ class About extends Component {
                             <div class="flex_col" data-aos="fade-up" data-offset="30">
                                 <div className="about_title text-center " style={{ marginTop: 28, marginBottom: 7, textTransform: 'uppercase' }}>Want to work with me?</div>
                                 <div className="about_paras text-center">
-                                    Get in touch with me at <span className="animate_span"> aviciafernandes@gmail.com </span> <br />
+                                    Get in touch with me at <a href="mailto:fernandesavicia@gmail.com" className="animate_span"> fernandesavicia@gmail.com </a> <br />
                                         Or Fill in below details.
                                 </div>
                                 <div className="about_title" style={{ marginTop: 15, marginBottom: 15, fontFamily: 'Montserrat', fontSize: 20, textAlign: 'center' }}>Let’s talk.</div>

@@ -20,7 +20,7 @@
 .navigationDrawer {
     position: fixed;
     top: 1px;
-    height: 56vh;
+    height: 46vh;
     background: red;
     width: 100%;
     z-index: 2;
