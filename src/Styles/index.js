@@ -44,6 +44,7 @@ export const PageHead = styled.p`
     font-weight: 900;
     font-size: 50px;
     margin-bottom: 12px;
+    margin-top: 0px;
 `;
 
 export const Divider = styled.hr`

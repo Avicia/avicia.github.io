@@ -60,3 +60,29 @@ div.onView:hover+div.boxes {
 .back_arrow:hover+.back_class {
     opacity: 1!important;
 }
+
+.gallery_container {
+    padding: 20px;
+}
+
+.gallery_title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.gallery_date {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1f1d1db0;
+}
+
+.gallery_desc {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: 25px;
+}

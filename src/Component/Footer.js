@@ -46,7 +46,7 @@ class Footer extends Component {
                     </Link>
                 </FlexRow>
                 <FlexRow>
-                    <Link className="nav-link onhover-red" style={{ color: 'white', fontSize: 10, marginTop: 35 }}>All rights reserved ©️ Avicia Fernandes</Link>
+                    <Link className="nav-link onhover-red" style={{ marginRight: 15, color: 'white', fontSize: 10, marginTop: 35 }}>All rights reserved ©️ Avicia Fernandes</Link>
                 </FlexRow>
             </FlexContainerCOl>
         );
