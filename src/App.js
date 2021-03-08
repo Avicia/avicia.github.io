@@ -23,8 +23,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <LandingPage />
+        </Route> */}
+        <Route exact path="/">
+          <Header />
+          <Home />
+          <Footer />
         </Route>
         <Route path="/portfolio">
           <Header />

@@ -39,9 +39,10 @@ class About extends Component {
                             </p>
                             <p className="about_paras" style={{ color: 'red' }}><i className="family-Montserrat">‘‘Art Matters because YOUR imagination can change the world.’’</i> - Neil Gaiman</p>
                             <p className="about_paras">
-                                I briefly studied art in school but did not embrace it enough until recently, who knew the pandemic could affect you positively as well. Although, I did always associate myself with art ever since I was a kid, I was good at it and everyone noticed me because of it but I never really thought of it as a career option. However, Here I am surviving off the thing I never thought I’d be doing.
+                                I briefly studied art in school but did not embrace it enough until recently.
+                                I thought of Art as a dead end in the success ladder. But here I am climbing
+                                that ladder anyway.
                             </p>
-
                         </div>
                     </div>
                     <Divider />

@@ -16,7 +16,7 @@ class Header extends Component {
             <div className="nav-header">
                 {
                     this.state.showNavigationBar ?
-                        <div className="navigationDrawer">
+                        <div className="navigationDrawer" data-aos="slide-down">
                             <div>
                                 <div className="nav-title"
                                     style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' }}
