@@ -11,7 +11,6 @@ import Commission from './Pages/Commission';
 import Home from './Pages/Home';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
-import LandingPage from './Pages/Landing';
 import emailjs from 'emailjs-com';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
