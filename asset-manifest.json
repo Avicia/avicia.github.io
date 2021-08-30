@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.00c10ea6.chunk.css",
-    "main.js": "/static/js/main.c7a0608b.chunk.js",
-    "main.js.map": "/static/js/main.c7a0608b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8fca9010.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8fca9010.js.map",
+    "main.css": "/static/css/main.1c6b625f.chunk.css",
+    "main.js": "/static/js/main.0396bd76.chunk.js",
+    "main.js.map": "/static/js/main.0396bd76.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d2e0c5b2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d2e0c5b2.js.map",
     "static/css/2.30fbed10.chunk.css": "/static/css/2.30fbed10.chunk.css",
-    "static/js/2.78bad9c6.chunk.js": "/static/js/2.78bad9c6.chunk.js",
-    "static/js/2.78bad9c6.chunk.js.map": "/static/js/2.78bad9c6.chunk.js.map",
-    "static/js/3.40a4f286.chunk.js": "/static/js/3.40a4f286.chunk.js",
-    "static/js/3.40a4f286.chunk.js.map": "/static/js/3.40a4f286.chunk.js.map",
+    "static/js/2.6840495f.chunk.js": "/static/js/2.6840495f.chunk.js",
+    "static/js/2.6840495f.chunk.js.map": "/static/js/2.6840495f.chunk.js.map",
+    "static/js/3.1e1704a2.chunk.js": "/static/js/3.1e1704a2.chunk.js",
+    "static/js/3.1e1704a2.chunk.js.map": "/static/js/3.1e1704a2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.30fbed10.chunk.css.map": "/static/css/2.30fbed10.chunk.css.map",
-    "static/css/main.00c10ea6.chunk.css.map": "/static/css/main.00c10ea6.chunk.css.map",
-    "static/js/2.78bad9c6.chunk.js.LICENSE.txt": "/static/js/2.78bad9c6.chunk.js.LICENSE.txt",
+    "static/css/main.1c6b625f.chunk.css.map": "/static/css/main.1c6b625f.chunk.css.map",
+    "static/js/2.6840495f.chunk.js.LICENSE.txt": "/static/js/2.6840495f.chunk.js.LICENSE.txt",
     "static/media/1.webp": "/static/media/1.689209ee.webp",
     "static/media/1.png": "/static/media/1.b1b8528a.png",
     "static/media/10.png": "/static/media/10.9aeac3e5.png",
@@ -90,7 +90,6 @@
     "static/media/KakashixAkatsuki.png": "/static/media/KakashixAkatsuki.6fc09f04.png",
     "static/media/KilluaxDBZ.png": "/static/media/KilluaxDBZ.a78496bc.png",
     "static/media/Knight.png": "/static/media/Knight.45469bf4.png",
-    "static/media/Landing_Thunmbnail.d9447564.png": "/static/media/Landing_Thunmbnail.d9447564.png",
     "static/media/Light.png": "/static/media/Light.6dd7d6bf.png",
     "static/media/LoveYourself.png": "/static/media/LoveYourself.24139b90.png",
     "static/media/LuffyxDBZ.png": "/static/media/LuffyxDBZ.cf8aa548.png",
@@ -138,10 +137,10 @@
     "static/media/standee.webp": "/static/media/standee.f7a848b3.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fca9010.js",
+    "static/js/runtime-main.d2e0c5b2.js",
     "static/css/2.30fbed10.chunk.css",
-    "static/js/2.78bad9c6.chunk.js",
-    "static/css/main.00c10ea6.chunk.css",
-    "static/js/main.c7a0608b.chunk.js"
+    "static/js/2.6840495f.chunk.js",
+    "static/css/main.1c6b625f.chunk.css",
+    "static/js/main.0396bd76.chunk.js"
   ]
 }
