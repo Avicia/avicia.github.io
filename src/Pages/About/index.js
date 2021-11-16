@@ -101,6 +101,13 @@ class About extends Component {
               Experience
             </p>
             <p className="about_paras">
+              Cuddles for Cubs
+              <br />
+              <MonstRed>Graphic Designer</MonstRed>
+              <br />
+              <MonstThin>April 2021 - Present | Mumbai, India.</MonstThin>
+              <br />
+              <br />
               Baskin Robbins - Graviss Foods Pvt Ltd - India
               <br />
               <MonstRed>Freelance Illustrator</MonstRed>
@@ -140,13 +147,7 @@ class About extends Component {
               <MonstThin>March 2019 - May 2019 | Mumbai, India.</MonstThin>
               <br />
               <br />
-              Cuddles for Cubs
-              <br />
-              <MonstRed>Graphic Designer</MonstRed>
-              <br />
-              <MonstThin>April 2021 - Present | Mumbai, India.</MonstThin>
-              <br />
-              <br />
+              
             </p>
           </FlexCol>
           <FlexCol style={{ padding: "0 50px" }}>
