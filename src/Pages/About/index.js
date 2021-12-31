@@ -105,7 +105,7 @@ class About extends Component {
               <br />
               <MonstRed>Graphic Designer</MonstRed>
               <br />
-              <MonstThin>April 2021 - Present | Mumbai, India.</MonstThin>
+              <MonstThin>April 2021 - December 2021 | Mumbai, India.</MonstThin>
               <br />
               <br />
               Baskin Robbins - Graviss Foods Pvt Ltd - India
