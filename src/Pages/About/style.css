@@ -44,11 +44,6 @@
     margin-top: 50px;
 }
 
-.right_profile_container {
-    float: left;
-    width: 360px;
-}
-
 .profile_image {
     width: 100%;
     height: auto;
@@ -58,6 +53,23 @@
     float: left;
     width: 55%;
     padding: 0 30px;
+}
+
+.right_profile_container {
+    float: left;
+    width: 360px;
+}
+@media (max-width: 1024px) {
+    .left_container {
+        float: left;
+        width: 300px;
+        padding: 0 30px;
+    }
+    
+    .right_profile_container {
+        float: left;
+        width: 360px;
+    }
 }
 
 .animate_span {

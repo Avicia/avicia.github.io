@@ -49,6 +49,7 @@
 
 .nav-link {
     flex: 1;
+    justify-content: center;
     width: 120px;
     margin: 0px 0px 0px 25px;
     color: var(--fontColor);
@@ -60,6 +61,19 @@
     letter-spacing: .2em;
     text-align: center;
     text-transform: uppercase;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-center {
+        font-size: 32px;
+        flex-basis: 100%;
+    }
 }
 
 .nav-link:hover {
