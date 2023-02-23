@@ -63,18 +63,27 @@ class Header extends Component {
             <div>
               <Link
                 to="/portfolio"
+                onClick={() => this.setState({ showNavigationBar: false })}
                 className="nav-link color-white onhover-black"
               >
                 Portfolio
               </Link>
             </div>
             <div>
-              <Link to="/sketch" className="nav-link color-white onhover-black">
+              <Link
+                to="/sketch"
+                onClick={() => this.setState({ showNavigationBar: false })}
+                className="nav-link color-white onhover-black"
+              >
                 SketchBook
               </Link>
             </div>
             <div>
-              <Link to="/about" className="nav-link color-white onhover-black">
+              <Link
+                to="/about"
+                onClick={() => this.setState({ showNavigationBar: false })}
+                className="nav-link color-white onhover-black"
+              >
                 About
               </Link>
             </div>

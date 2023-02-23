@@ -31,14 +31,14 @@ class About extends Component {
         <Divider />
         <div className="flex_col">
           <div className="first_container">
-            <div className="right_profile_container">
+            <div className="left_container">
               <img
                 className="profile_image"
                 src={Avicia_profile}
                 alt="avicia profile"
               />
             </div>
-            <div className="left_container">
+            <div className="right_container">
               <PageHead>
                 Hello, <br /> I'm Avicia.
               </PageHead>
@@ -147,10 +147,9 @@ class About extends Component {
               <MonstThin>March 2019 - May 2019 | Mumbai, India.</MonstThin>
               <br />
               <br />
-              
             </p>
           </FlexCol>
-          <FlexCol style={{ padding: "0 50px" }}>
+          <FlexCol style={{ padding: "0 50px" }} className="remove-padding">
             <p className="about_title">
               <br />
               <br />

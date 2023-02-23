@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { FlexContainer, FlexPicsColumn } from "../Styles";
+import { FlexContainer, FlexPicsColumn, FlexRow } from "../Styles";
 import "../Pages/Home/style.css";
 
 class ImageGallery extends Component {
@@ -12,55 +12,75 @@ class ImageGallery extends Component {
       paddingBottom: "50px",
     };
     const imagesCss = {
-      // 'boxShadow': '0px 4px 8px -4px black',
       WebkitAnimationName: "fadeIn",
       animationName: "fadeIn",
       WebkitAnimationDuration: "3s",
       animationDuration: "3s",
+      boxShadow: "1px 1px 10px -8px black",
     };
-    const img = this.props.imageList;
-    const totCols = parseInt(this.props.colLength);
-    const colLength = Math.round(img.length / totCols); //1
+    if (!this.props.activeGallery.collections.assets) {
+      return null;
+    }
+    const Images = this.props.activeGallery.collections.assets || [];
+    const totCols = parseInt(
+      this.props.activeGallery?.collections?.colLength || 2
+    );
+    const colLength = Math.round(Images.length / totCols);
     return (
-      <FlexContainer
-        className="cus_cursor"
-        style={{ display: this.props.showGallery ? "flex" : "none" }}
-      >
-        {img.length > 0 ? (
-          Array(totCols)
-            .fill(1)
-            .map((v, ind) => {
-              console.log(img);
-              return (
-                <FlexPicsColumn key={ind}>
-                  {true ? (
-                    img
-                      .slice(colLength * ind, colLength * (ind + 1))
-                      .map((v, i) => {
-                        console.log(ind);
-                        return (
-                          <div key={i} style={divCss}>
-                            <img
-                              src={v.default}
-                              width="100%"
-                              alt="image1"
-                              style={imagesCss}
-                            />
-                          </div>
-                        );
-                      })
-                  ) : (
-                    <div></div>
-                  )}
-                </FlexPicsColumn>
-              );
-            })
-        ) : (
-          <h1 style={{ textAlign: "center", height: 200 }}>
-            No Image Uploaded!!
-          </h1>
-        )}
-      </FlexContainer>
+      <>
+        <FlexRow>
+          <div
+            className="gallery_container"
+            data-aos="fade-in"
+            data-aos-offset="60"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="gallery_title">
+              {this.props?.activeGallery?.collections?.title || ""}
+            </div>
+            <div className="gallery_date">
+              {this.props?.activeGallery?.collections?.date || ""}
+            </div>
+            <div className="gallery_desc">
+              {this.props?.activeGallery?.collections?.desc || ""}
+            </div>
+          </div>
+        </FlexRow>
+        <FlexRow>
+          <FlexContainer className="cus_cursor">
+            {Images.length > 0 ? (
+              Array(totCols)
+                .fill(1)
+                .map((v, ind) => {
+                  return (
+                    <FlexPicsColumn key={ind} style={{ flexWrap: "nowrap" }}>
+                      {Images.slice(colLength * ind, colLength * (ind + 1)).map(
+                        (v, i) => {
+                          return (
+                            <div key={i} style={divCss}>
+                              <img
+                                src={v.default}
+                                width="100%"
+                                alt="image1"
+                                style={imagesCss}
+                              />
+                            </div>
+                          );
+                        }
+                      )}
+                    </FlexPicsColumn>
+                  );
+                })
+            ) : (
+              <h1 style={{ textAlign: "center", height: 200 }}>
+                No Image Uploaded!!
+              </h1>
+            )}
+          </FlexContainer>
+        </FlexRow>
+      </>
     );
   }
 }

@@ -1,19 +1,15 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import {
-  Switch,
-  Route,
-  BrowserRouter as Router
-} from "react-router-dom";
-import About from './Pages/About';
-import Sketch from './Pages/Sketch';
-import Commission from './Pages/Commission';
-import Home from './Pages/Home';
-import Header from './Component/Header';
-import Footer from './Component/Footer';
-import emailjs from 'emailjs-com';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import About from "./Pages/About";
+import Sketch from "./Pages/Sketch";
+import Commission from "./Pages/Commission";
+import Home from "./Pages/Home";
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
+import emailjs from "emailjs-com";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   emailjs.init("user_IAmfWoSw7kvklzY9uZFf9");
@@ -22,9 +18,6 @@ function App() {
   return (
     <Router>
       <Switch>
-        {/* <Route exact path="/">
-          <LandingPage />
-        </Route> */}
         <Route exact path="/">
           <Header />
           <Home />
