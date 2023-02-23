@@ -9,7 +9,7 @@ import {
 } from "../../Styles";
 import VisualIllustation_THUMBNAIL from "../../assets/Thumbnails/VisualIllustation_THUMBNAIL.png";
 import BaskinRobbins from "../../assets/Thumbnails/BaskinRobbins.webp";
-import LOGOS_THUMBNAIL from "../../assets/Thumbnails/Logos_Thumbnail.jpg";
+import LOGOS_THUMBNAIL from "../../assets/Logos/All/onyx_02.jpg";
 import CharacterDesign_THUMBNAIL from "../../assets/Thumbnails/CharacterDesign_THUMBNAIL.png";
 import INKTOBER_THUMBNAIL from "../../assets/Thumbnails/INKTOBER_THUMBNAIL.png";
 import Posters_THUMBNAIL from "../../assets/Thumbnails/Posters_THUMBNAIL.png";
@@ -343,10 +343,10 @@ class Home extends Component {
             display: this.state.showGallery ? "none" : "flex",
           }}
         >
-          <FlexCol style={boxNavs} onClick={() => setFolder("LOGOS")}>
-            <div className="onView" style={card_body0}></div>
-            <div className="boxes onhover-red" style={card_caption}>
-              Logos
+          <FlexCol style={boxNavs} onClick={() => setFolder("CDs")}>
+            <div className="onView" style={card_body4}></div>
+            <div className="onhover-red boxes" style={card_caption}>
+              Character Design
             </div>
           </FlexCol>
           <FlexCol style={boxNavs} onClick={() => setFolder("BRs")}>
@@ -384,10 +384,10 @@ class Home extends Component {
               Inktober 2020
             </div>
           </FlexCol>
-          <FlexCol style={boxNavs} onClick={() => setFolder("CDs")}>
-            <div className="onView" style={card_body4}></div>
-            <div className="onhover-red boxes" style={card_caption}>
-              Character Design
+          <FlexCol style={boxNavs} onClick={() => setFolder("LOGOS")}>
+            <div className="onView" style={card_body0}></div>
+            <div className="boxes onhover-red" style={card_caption}>
+              Logos
             </div>
           </FlexCol>
         </FlexRow>
