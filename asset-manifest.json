@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.e1a3f403.chunk.css",
-    "main.js": "/static/js/main.5947887c.chunk.js",
-    "main.js.map": "/static/js/main.5947887c.chunk.js.map",
+    "main.js": "/static/js/main.c3ca7a1b.chunk.js",
+    "main.js.map": "/static/js/main.c3ca7a1b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fd1190ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.fd1190ca.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.3abf59c1.chunk.js": "/static/js/2.3abf59c1.chunk.js",
-    "static/js/2.3abf59c1.chunk.js.map": "/static/js/2.3abf59c1.chunk.js.map",
+    "static/js/2.5692005f.chunk.js": "/static/js/2.5692005f.chunk.js",
+    "static/js/2.5692005f.chunk.js.map": "/static/js/2.5692005f.chunk.js.map",
     "static/js/3.4c7656c5.chunk.js": "/static/js/3.4c7656c5.chunk.js",
     "static/js/3.4c7656c5.chunk.js.map": "/static/js/3.4c7656c5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/static/css/2.ae9e5f60.chunk.css.map",
     "static/css/main.e1a3f403.chunk.css.map": "/static/css/main.e1a3f403.chunk.css.map",
-    "static/js/2.3abf59c1.chunk.js.LICENSE.txt": "/static/js/2.3abf59c1.chunk.js.LICENSE.txt",
+    "static/js/2.5692005f.chunk.js.LICENSE.txt": "/static/js/2.5692005f.chunk.js.LICENSE.txt",
     "static/media/1.webp": "/static/media/1.689209ee.webp",
     "static/media/1.png": "/static/media/1.b1b8528a.png",
     "static/media/10.png": "/static/media/10.9aeac3e5.png",
@@ -96,7 +96,6 @@
     "static/media/KilluaxDBZ.png": "/static/media/KilluaxDBZ.a78496bc.png",
     "static/media/Knight.png": "/static/media/Knight.45469bf4.png",
     "static/media/Light.png": "/static/media/Light.6dd7d6bf.png",
-    "static/media/Logos_Thumbnail.0bc18077.jpg": "/static/media/Logos_Thumbnail.0bc18077.jpg",
     "static/media/LoveYourself.png": "/static/media/LoveYourself.24139b90.png",
     "static/media/LuffyxDBZ.png": "/static/media/LuffyxDBZ.cf8aa548.png",
     "static/media/Maggi-Lindeman.png": "/static/media/Maggi-Lindeman.7fa60fc5.png",
@@ -156,8 +155,8 @@
   "entrypoints": [
     "static/js/runtime-main.fd1190ca.js",
     "static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.3abf59c1.chunk.js",
+    "static/js/2.5692005f.chunk.js",
     "static/css/main.e1a3f403.chunk.css",
-    "static/js/main.5947887c.chunk.js"
+    "static/js/main.c3ca7a1b.chunk.js"
   ]
 }
