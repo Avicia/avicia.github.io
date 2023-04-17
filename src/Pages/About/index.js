@@ -209,11 +209,11 @@ class About extends Component {
             <div className="about_paras text-center">
               Get in touch with me at{" "}
               <a
-                href="mailto:fernandesavicia@gmail.com"
+                href="mailto:aviciafernandes@gmail.com"
                 className="animate_span"
               >
                 {" "}
-                fernandesavicia@gmail.com{" "}
+                aviciafernandes@gmail.com{" "}
               </a>{" "}
               <br />
               Or Fill in below details.
