@@ -28,7 +28,7 @@ class Footer extends Component {
                         &nbsp;&nbsp;&nbsp;&nbsp; <RiLinkedinFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.linkedin.com/in/aviciafernandes/')} />
                         &nbsp;&nbsp;&nbsp;&nbsp; <RiTwitterFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://twitter.com/FernandesAvicia')} />
                         &nbsp;&nbsp;&nbsp;&nbsp; <RiBehanceFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('https://www.behance.net/AviciaFernandes')} />
-                        &nbsp;&nbsp;&nbsp;&nbsp; <RiGoogleFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('mailto:fernandesavicia@gmail.com')} />
+                        &nbsp;&nbsp;&nbsp;&nbsp; <RiGoogleFill size={25} className="icon-circle onhover-bounce" onClick={() => this.redirectTo('mailto:aviciafernandes@gmail.com')} />
                     </FlexCol>
                 </FlexRow>
                 <FlexRow style={{ justifyContent: "center", marginBottom: 45 }}>
